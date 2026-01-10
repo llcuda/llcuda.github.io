@@ -17,17 +17,17 @@ Key Features:
 
 ## Getting Started
 
-- [Homepage](https://waqasm86.github.io/llcuda.github.io/): Official llcuda v2.0.6 documentation homepage
-- [Installation Guide](https://waqasm86.github.io/llcuda.github.io/guides/installation/): Complete installation instructions for GitHub-only distribution
-- [Quick Start Guide](https://waqasm86.github.io/llcuda.github.io/guides/quickstart/): 5-minute guide to get started with llcuda
+- [Homepage](https://llcuda.github.io/): Official llcuda v2.0.6 documentation homepage
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for GitHub-only distribution
+- [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute guide to get started with llcuda
 - [GitHub Repository](https://github.com/waqasm86/llcuda): Main llcuda project repository
 
 ## Tutorials
 
-- [Gemma 3-1B Google Colab Tutorial](https://waqasm86.github.io/llcuda.github.io/tutorials/gemma-3-1b-colab/): Complete guide with verified 134 tok/s performance on Tesla T4
-- [Installation Guide](https://waqasm86.github.io/llcuda.github.io/guides/installation/): GitHub installation and binary auto-download
-- [Quick Start](https://waqasm86.github.io/llcuda.github.io/guides/quickstart/): 5-minute setup guide
-- [API Reference](https://waqasm86.github.io/llcuda.github.io/api/overview/): Complete API documentation
+- [Gemma 3-1B Google Colab Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Complete guide with verified 134 tok/s performance on Tesla T4
+- [Installation Guide](https://llcuda.github.io/guides/installation/): GitHub installation and binary auto-download
+- [Quick Start](https://llcuda.github.io/guides/quickstart/): 5-minute setup guide
+- [API Reference](https://llcuda.github.io/api/overview/): Complete API documentation
 
 ## Main Repository
 
@@ -37,10 +37,10 @@ Key Features:
 
 ## Documentation
 
-- [Quick Start Guide](https://waqasm86.github.io/llcuda.github.io/guides/quickstart/): 5-minute setup guide for llcuda v2.0.6
-- [Installation Guide](https://waqasm86.github.io/llcuda.github.io/guides/installation/): Complete installation instructions for all platforms
-- [Gemma 3-1B Tutorial](https://waqasm86.github.io/llcuda.github.io/tutorials/gemma-3-1b-colab/): Step-by-step Google Colab tutorial
-- [API Reference](https://waqasm86.github.io/llcuda.github.io/api/overview/): Complete API documentation
+- [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute setup guide for llcuda v2.0.6
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for all platforms
+- [Gemma 3-1B Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Step-by-step Google Colab tutorial
+- [API Reference](https://llcuda.github.io/api/overview/): Complete API documentation
 
 ## GitHub Repository
 
@@ -70,11 +70,11 @@ Binary auto-download: 266 MB CUDA binaries download automatically from GitHub Re
 
 ## Documentation Structure
 
-- [Home](https://waqasm86.github.io/llcuda.github.io/): Main homepage with overview
-- [Quick Start](https://waqasm86.github.io/llcuda.github.io/guides/quickstart/): 5-minute setup guide
-- [Installation Guide](https://waqasm86.github.io/llcuda.github.io/guides/installation/): Complete installation instructions
-- [Gemma 3-1B Tutorial](https://waqasm86.github.io/llcuda.github.io/tutorials/gemma-3-1b-colab/): Google Colab tutorial with Tesla T4
-- [API Overview](https://waqasm86.github.io/llcuda.github.io/api/overview/): Complete API documentation
+- [Home](https://llcuda.github.io/): Main homepage with overview
+- [Quick Start](https://llcuda.github.io/guides/quickstart/): 5-minute setup guide
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions
+- [Gemma 3-1B Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Google Colab tutorial with Tesla T4
+- [API Overview](https://llcuda.github.io/api/overview/): Complete API documentation
 
 ## Key Information
 
@@ -99,21 +99,21 @@ Remember:
 
 ## Documentation
 
-- [Installation Guide](https://waqasm86.github.io/llcuda.github.io/guides/installation/): Complete installation instructions for GitHub, wheel, and source installations
-- [Quick Start Guide](https://waqasm86.github.io/llcuda.github.io/guides/quickstart/): 5-minute quick start tutorial with working examples
-- [Gemma 3-1B Tutorial](https://waqasm86.github.io/llcuda.github.io/tutorials/gemma-3-1b-colab/): Complete Google Colab tutorial with verified 134 tok/s performance
-- [API Overview](https://waqasm86.github.io/llcuda.github.io/api/overview/): Complete API reference for InferenceEngine
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for GitHub, wheel, and source installations
+- [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute quick start tutorial with working examples
+- [Gemma 3-1B Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Complete Google Colab tutorial with verified 134 tok/s performance
+- [API Overview](https://llcuda.github.io/api/overview/): Complete API reference for InferenceEngine
 
 ## Main Repository
 
 - [llcuda GitHub](https://github.com/waqasm86/llcuda): Main project repository
-- [Installation](https://waqasm86.github.io/llcuda.github.io/guides/installation/): Complete installation guide
-- [Quick Start](https://waqasm86.github.io/llcuda.github.io/guides/quickstart/): 5-minute quick start guide
+- [Installation](https://llcuda.github.io/guides/installation/): Complete installation guide
+- [Quick Start](https://llcuda.github.io/guides/quickstart/): 5-minute quick start guide
 
 ## Google Colab Notebooks
 
 - [Gemma 3-1B Tutorial](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb): Complete tutorial for llcuda v2.0.6
-- [Tutorial Documentation](https://waqasm86.github.io/llcuda.github.io/tutorials/gemma-3-1b-colab/): Step-by-step guide
+- [Tutorial Documentation](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Step-by-step guide
 
 ## Performance Data
 
