@@ -1,9 +1,9 @@
 site_name: llcuda v2.0.6 - Tesla T4 CUDA Inference
-site_url: https://waqasm86.github.io/llcuda.github.io/
+site_url: https://llcuda.github.io/
 site_description: Fast LLM inference on Tesla T4 GPUs with CUDA 12, FlashAttention, and Unsloth integration. Verified 134 tokens/sec on Gemma 3-1B. GitHub-only distribution with auto-downloading binaries. Perfect for Google Colab and production deployment.
 site_author: Waqas Muhammad
-repo_name: waqasm86/llcuda
-repo_url: https://github.com/waqasm86/llcuda
+repo_name: llcuda/llcuda
+repo_url: https://github.com/llcuda/llcuda
 edit_uri: ""
 copyright: Copyright &copy; 2024-2026 Waqas Muhammad
 

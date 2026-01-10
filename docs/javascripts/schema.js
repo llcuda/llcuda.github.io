@@ -25,9 +25,9 @@
     },
     "datePublished": "2026-01-10",
     "dateModified": "2026-01-10",
-    "url": "https://waqasm86.github.io/llcuda.github.io/",
-    "image": "https://waqasm86.github.io/llcuda.github.io/assets/images/social-card.png",
-    "screenshot": "https://waqasm86.github.io/llcuda.github.io/assets/images/screenshot.png",
+    "url": "https://llcuda.github.io/",
+    "image": "https://llcuda.github.io/assets/images/social-card.png",
+    "screenshot": "https://llcuda.github.io/assets/images/screenshot.png",
     "codeRepository": "https://github.com/waqasm86/llcuda",
     "programmingLanguage": [
       "Python",
@@ -66,7 +66,7 @@
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://waqasm86.github.io/llcuda.github.io/"
+      "item": "https://llcuda.github.io/"
     }]
   };
 
@@ -80,11 +80,11 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "llcuda Documentation",
-    "url": "https://waqasm86.github.io/llcuda.github.io/",
+    "url": "https://llcuda.github.io/",
     "description": "Official documentation for llcuda v2.0.6 - Tesla T4 CUDA Inference Engine",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://waqasm86.github.io/llcuda.github.io/search/?q={search_term_string}",
+      "target": "https://llcuda.github.io/search/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -113,7 +113,7 @@
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://waqasm86.github.io/llcuda.github.io/"
+      "@id": "https://llcuda.github.io/"
     }
   };
 

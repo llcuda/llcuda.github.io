@@ -5,12 +5,12 @@ keywords: llcuda, CUDA, Tesla T4, LLM inference, FlashAttention, GGUF, Unsloth, 
 author: Waqas Muhammad
 og:title: llcuda v2.0.6 - Tesla T4 CUDA Inference Engine
 og:description: Fast LLM inference on Tesla T4 GPUs with verified 134 tokens/sec performance
-og:image: https://waqasm86.github.io/llcuda.github.io/assets/images/social-card.png
-og:url: https://waqasm86.github.io/llcuda.github.io/
+og:image: https://llcuda.github.io/assets/images/social-card.png
+og:url: https://llcuda.github.io/
 twitter:card: summary_large_image
 twitter:title: llcuda v2.0.6 - Tesla T4 CUDA Inference
 twitter:description: Fast LLM inference on Tesla T4 GPUs with verified 134 tokens/sec performance
-twitter:image: https://waqasm86.github.io/llcuda.github.io/assets/images/social-card.png
+twitter:image: https://llcuda.github.io/assets/images/social-card.png
 ---
 
 # llcuda v2.0.6: Tesla T4 CUDA Inference
