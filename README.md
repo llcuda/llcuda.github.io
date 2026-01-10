@@ -6,7 +6,7 @@ This repository contains the source files for the llcuda documentation website b
 
 ## 🌐 Live Website
 
-**Coming soon**: https://llcuda.github.io/
+https://llcuda.github.io/
 
 ## 📚 Documentation Structure
 
