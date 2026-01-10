@@ -1,0 +1,12 @@
+# Default meta tags for all pages
+title: llcuda v2.0.6 - Tesla T4 CUDA Inference Engine
+description: Fast LLM inference on Tesla T4 GPUs with CUDA 12, FlashAttention, and Unsloth integration. Verified 134 tokens/sec on Gemma 3-1B.
+keywords: llcuda, CUDA, Tesla T4, LLM inference, FlashAttention, GGUF, Unsloth, Google Colab, GPU acceleration, deep learning
+author: Waqas Muhammad
+robots: index, follow
+og:type: website
+og:site_name: llcuda Documentation
+og:locale: en_US
+twitter:card: summary_large_image
+twitter:site: "@waqasm86"
+twitter:creator: "@waqasm86"
