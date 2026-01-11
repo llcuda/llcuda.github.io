@@ -4,16 +4,17 @@
 
 ## About llcuda
 
-llcuda is a Python library providing CUDA-accelerated inference for large language models (LLMs) optimized specifically for NVIDIA Tesla T4 GPUs. It offers PyTorch-style API with automated binary management, GGUF model support, and exceptional performance through FlashAttention and Tensor Core optimization.
+llcuda is a Python library providing CUDA-accelerated inference for large language models (LLMs) optimized specifically for NVIDIA Tesla T4 GPUs (SM 7.5). It delivers verified 134 tokens/sec performance on Gemma 3-1B through FlashAttention v2, Tensor Core optimization, and CUDA 12 binaries built specifically for Tesla T4 hardware.
 
 Key Features:
-- 🚀 **134 tokens/sec** verified performance on Gemma 3-1B (Tesla T4)
+- 🚀 **134 tokens/sec** verified performance on Gemma 3-1B Q4_K_M (Tesla T4)
 - 🔥 FlashAttention v2 with 2-3x speedup for attention operations
 - ⚡ Tensor Core optimization for Tesla T4 (SM 7.5)
-- 🎯 GitHub-only distribution with auto-download CUDA binaries
+- 🎯 GitHub-only distribution with auto-download CUDA binaries (266 MB)
 - 🔧 Simple PyTorch-style API for inference
 - 📦 GGUF format support from llama.cpp ecosystem
-- 🚀 Google Colab optimized for Tesla T4 GPUs
+- 🚀 Google Colab optimized for free Tesla T4 GPU access
+- 🔄 Seamless Unsloth integration for fine-tuning → deployment workflow
 
 ## Getting Started
 
@@ -22,12 +23,13 @@ Key Features:
 - [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute guide to get started with llcuda
 - [GitHub Repository](https://github.com/waqasm86/llcuda): Main llcuda project repository
 
-## Tutorials
+## Comprehensive Tutorials
 
 - [Gemma 3-1B Google Colab Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Complete guide with verified 134 tok/s performance on Tesla T4
-- [Installation Guide](https://llcuda.github.io/guides/installation/): GitHub installation and binary auto-download
-- [Quick Start](https://llcuda.github.io/guides/quickstart/): 5-minute setup guide
-- [API Reference](https://llcuda.github.io/api/overview/): Complete API documentation
+- [Gemma 3-1B Executed Results](https://llcuda.github.io/tutorials/gemma-3-1b-executed/): Real Tesla T4 execution output showing 134 tok/s verified performance
+- [Build CUDA Binaries](https://llcuda.github.io/tutorials/build-binaries/): Complete guide for building llama.cpp with CUDA 12 and FlashAttention on Tesla T4
+- [Unsloth Integration](https://llcuda.github.io/tutorials/unsloth-integration/): End-to-end workflow from fine-tuning with Unsloth to deployment with llcuda
+- [Performance Optimization](https://llcuda.github.io/tutorials/performance/): Advanced performance tuning and optimization techniques
 
 ## Main Repository
 
@@ -35,12 +37,29 @@ Key Features:
 - [Binary Releases](https://github.com/waqasm86/llcuda/releases/tag/v2.0.6): Pre-built CUDA 12 binaries for Tesla T4
 - [Colab Notebooks](https://github.com/waqasm86/llcuda/tree/main/notebooks): Google Colab tutorials
 
-## Documentation
+## Complete Documentation
 
+### Getting Started Guides
 - [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute setup guide for llcuda v2.0.6
-- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for all platforms
-- [Gemma 3-1B Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Step-by-step Google Colab tutorial
-- [API Reference](https://llcuda.github.io/api/overview/): Complete API documentation
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for Google Colab, local systems, and offline installation
+- [First Steps](https://llcuda.github.io/guides/first-steps/): Detailed first steps after installation including GPU verification and basic inference
+- [Troubleshooting](https://llcuda.github.io/guides/troubleshooting/): Solutions for common installation, GPU, model, and performance issues
+- [FAQ](https://llcuda.github.io/guides/faq/): Frequently asked questions about llcuda, installation, compatibility, and usage
+
+### Advanced Guides
+- [Model Selection Guide](https://llcuda.github.io/guides/model-selection/): How to choose the right model size and quantization for Tesla T4
+- [GGUF Format Guide](https://llcuda.github.io/guides/gguf-format/): Complete guide to GGUF format, quantization types, and model conversion
+
+### API Reference
+- [API Overview](https://llcuda.github.io/api/overview/): Complete API documentation overview
+- [InferenceEngine API](https://llcuda.github.io/api/inference-engine/): Detailed InferenceEngine class documentation with all methods and parameters
+- [Device Management API](https://llcuda.github.io/api/device/): GPU device management, CUDA properties, and memory operations
+- [Code Examples](https://llcuda.github.io/api/examples/): Complete working examples for chat, batch processing, streaming, and more
+
+### Performance Documentation
+- [Performance Benchmarks](https://llcuda.github.io/performance/benchmarks/): Comprehensive benchmarks for Gemma 3-1B, Llama 3.2-3B, Qwen 2.5-7B, and Llama 3.1-8B
+- [Tesla T4 Results](https://llcuda.github.io/performance/t4-results/): Detailed analysis of verified 134 tok/s Tesla T4 performance
+- [Performance Optimization](https://llcuda.github.io/performance/optimization/): Advanced optimization techniques for maximizing throughput and minimizing latency
 
 ## GitHub Repository
 
@@ -112,8 +131,19 @@ Remember:
 
 ## Google Colab Notebooks
 
-- [Gemma 3-1B Tutorial](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb): Complete tutorial for llcuda v2.0.6
-- [Tutorial Documentation](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Step-by-step guide
+llcuda includes 8 comprehensive Jupyter notebooks optimized for Tesla T4 GPUs on Google Colab:
+
+### Featured Notebooks
+- [Gemma 3-1B Tutorial (Recommended)](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb): Complete guide demonstrating 134 tok/s verified performance
+- [Gemma 3-1B Executed](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb): Live execution output from Tesla T4
+- [Build Binaries on T4](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb): Build CUDA 12 binaries from source
+- [Unsloth Complete Build](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_unsloth_t4_complete_build.ipynb): Full build workflow
+- [Unsloth Tutorial](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_unsloth_tutorial.ipynb): Unsloth integration examples
+- [Quickstart Tutorial](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_quickstart_tutorial.ipynb): 5-minute introduction
+
+### Notebook Documentation
+- [Notebooks Index](https://llcuda.github.io/notebooks/): Complete overview of all available notebooks
+- [Colab Usage Guide](https://llcuda.github.io/notebooks/colab/): How to use llcuda on Google Colab effectively
 
 ## Performance Data
 
