@@ -3,120 +3,168 @@
   <!-- Homepage -->
   <url>
     <loc>https://llcuda.github.io/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Getting Started -->
+  <!-- Getting Started Section -->
   <url>
-    <loc>https://llcuda.github.io/getting-started/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/guides/quickstart/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Installation -->
   <url>
-    <loc>https://llcuda.github.io/installation/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/guides/installation/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Quick Start -->
   <url>
-    <loc>https://llcuda.github.io/quick-start/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/guides/first-steps/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- API Reference -->
+  <!-- Tutorials Section -->
   <url>
-    <loc>https://llcuda.github.io/api-reference/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/tutorials/gemma-3-1b-colab/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Tutorials -->
   <url>
-    <loc>https://llcuda.github.io/tutorials/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/tutorials/gemma-3-1b-executed/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Colab Tutorial -->
   <url>
-    <loc>https://llcuda.github.io/tutorials/colab-gemma-3-1b/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/tutorials/build-binaries/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Performance -->
   <url>
-    <loc>https://llcuda.github.io/performance/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/tutorials/unsloth-integration/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Benchmarks -->
+  <url>
+    <loc>https://llcuda.github.io/tutorials/performance/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- API Reference Section -->
+  <url>
+    <loc>https://llcuda.github.io/api/overview/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://llcuda.github.io/api/inference-engine/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://llcuda.github.io/api/models/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://llcuda.github.io/api/device/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://llcuda.github.io/api/examples/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Performance Section -->
   <url>
     <loc>https://llcuda.github.io/performance/benchmarks/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Guides -->
   <url>
-    <loc>https://llcuda.github.io/guides/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/performance/t4-results/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Model Selection Guide -->
+  <url>
+    <loc>https://llcuda.github.io/performance/optimization/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guides Section -->
   <url>
     <loc>https://llcuda.github.io/guides/model-selection/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
-  <!-- GGUF Format Guide -->
   <url>
     <loc>https://llcuda.github.io/guides/gguf-format/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
-  <!-- Troubleshooting -->
   <url>
     <loc>https://llcuda.github.io/guides/troubleshooting/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://llcuda.github.io/guides/faq/</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Notebooks Section -->
+  <url>
+    <loc>https://llcuda.github.io/notebooks/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
-  <!-- FAQ -->
   <url>
-    <loc>https://llcuda.github.io/faq/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <loc>https://llcuda.github.io/notebooks/colab/</loc>
+    <lastmod>2026-01-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- GitHub Repository -->
-  <url>
-    <loc>https://github.com/waqasm86/llcuda</loc>
-    <lastmod>2026-01-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>
