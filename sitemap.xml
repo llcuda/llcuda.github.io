@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://llcuda.github.io/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/device/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/examples/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/inference-engine/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/models/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/overview/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/faq/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/first-steps/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/gguf-format/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/installation/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/model-selection/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/quickstart/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/troubleshooting/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/notebooks/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/notebooks/colab/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/benchmarks/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/optimization/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/t4-results/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/build-binaries/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/gemma-3-1b-colab/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/gemma-3-1b-executed/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/performance/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/unsloth-integration/</loc>
-         <lastmod>2026-01-11</lastmod>
+         <lastmod>2026-01-12</lastmod>
     </url>
 </urlset>
