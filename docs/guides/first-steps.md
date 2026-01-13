@@ -6,7 +6,7 @@ After installing llcuda, this guide will help you get started with your first in
 
 Before proceeding, ensure you have:
 
-- [x] Installed llcuda v2.0.6 from GitHub
+- [x] Installed llcuda v2.1.0 from GitHub
 - [x] Tesla T4 GPU (Google Colab or compatible)
 - [x] CUDA 12.x runtime (pre-installed in Colab)
 - [x] Python 3.11+
@@ -19,7 +19,7 @@ First, verify that llcuda is installed correctly:
 import llcuda
 
 print(f"llcuda version: {llcuda.__version__}")
-# Output: llcuda version: 2.0.6
+# Output: llcuda version: 2.1.0
 ```
 
 ## Check GPU Availability
@@ -52,7 +52,7 @@ Memory: 14.8 GB
 ```
 
 !!! success "Compatibility Check"
-    llcuda v2.0.6 is optimized exclusively for Tesla T4 GPUs (SM 7.5). If you see a different GPU, consider using llcuda v1.2.2 for broader compatibility.
+    llcuda v2.1.0 is optimized exclusively for Tesla T4 GPUs (SM 7.5). If you see a different GPU, consider using llcuda v1.2.2 for broader compatibility.
 
 ## Your First Inference
 

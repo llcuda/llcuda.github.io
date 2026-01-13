@@ -1,13 +1,16 @@
 # Building CUDA Binaries for llcuda
 
-This tutorial shows how to build optimized CUDA binaries for llcuda v2.0.6 on Tesla T4 GPUs. The binaries are built from llama.cpp with FlashAttention and CUDA 12 support.
+This tutorial shows how to build optimized CUDA binaries compatible with llcuda v2.1.0+ on Tesla T4 GPUs. The binaries are built from llama.cpp with FlashAttention and CUDA 12 support.
 
 !!! warning "Advanced Topic"
     This guide is for advanced users who want to customize binaries or contribute to llcuda development. Regular users should use the pre-built binaries that auto-download from GitHub Releases.
 
 ## Overview
 
-llcuda v2.0.6 uses pre-built CUDA binaries based on llama.cpp with these optimizations:
+llcuda v2.1.0 uses pre-built v2.0.6 CUDA binaries based on llama.cpp with these optimizations:
+
+!!! info "Binary Compatibility"
+    The v2.0.6 binaries are fully compatible with llcuda v2.1.0 and later versions. The binary format remains stable while the Python API receives new features.
 
 - **FlashAttention** - 2-3x faster attention for long contexts
 - **CUDA Graphs** - Reduced kernel launch overhead
@@ -391,7 +394,7 @@ If you build optimized binaries for different configurations:
 
 ## Reference Build Configuration
 
-For reproducible builds, here's the exact configuration used for llcuda v2.0.6:
+For reproducible builds, here's the exact configuration used for llcuda v2.0.6 binaries (compatible with v2.1.0+):
 
 ```bash
 cmake .. \

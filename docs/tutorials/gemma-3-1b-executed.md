@@ -1,6 +1,6 @@
 # Gemma 3-1B Executed Example
 
-This page documents the real execution output from running llcuda v2.0.6 with Gemma 3-1B on a Tesla T4 GPU in Google Colab. This demonstrates the verified performance of **134 tokens/sec**.
+This page documents the real execution output from running llcuda v2.1.0 with Gemma 3-1B on a Tesla T4 GPU in Google Colab. This demonstrates the verified performance of **134 tokens/sec**.
 
 !!! success "Verified Performance"
     This tutorial shows actual execution results from Google Colab with a Tesla T4 GPU, confirming llcuda achieves **134 tokens/sec** on Gemma 3-1B Q4_K_M quantization.
@@ -11,8 +11,8 @@ This page documents the real execution output from running llcuda v2.0.6 with Ge
 **GPU:** Tesla T4 (15 GB VRAM)
 **CUDA:** 12.2
 **Python:** 3.10.12
-**llcuda:** 2.0.6
-**Notebook:** `llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb`
+**llcuda:** 2.1.0
+**Notebook:** `llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb`
 
 ## Step-by-Step Execution Results
 
@@ -55,11 +55,11 @@ Collecting git+https://github.com/waqasm86/llcuda.git
   Preparing metadata (pyproject.toml) ... done
 Building wheels for collected packages: llcuda
   Building wheel for llcuda (pyproject.toml) ... done
-  Created wheel for llcuda: filename=llcuda-2.0.6-py3-none-any.whl size=62384 sha256=xxxx
+  Created wheel for llcuda: filename=llcuda-2.1.0-py3-none-any.whl size=62384 sha256=xxxx
   Stored in directory: /tmp/pip-ephem-wheel-cache-xxxxxxxx/wheels/xx/xx/xx
 Successfully built llcuda
 Installing collected packages: llcuda
-Successfully installed llcuda-2.0.6
+Successfully installed llcuda-2.1.0
 ```
 
 ### 3. Import and Verify Installation
@@ -71,7 +71,7 @@ print(f"llcuda version: {llcuda.__version__}")
 
 **Output:**
 ```
-llcuda version: 2.0.6
+llcuda version: 2.1.0
 ```
 
 ### 4. Check GPU Compatibility
@@ -435,7 +435,7 @@ The CUDA binaries include FlashAttention optimizations:
 
 ### 2. Tensor Cores
 
-llcuda v2.0.6 utilizes T4's Tensor Cores:
+llcuda v2.1.0 utilizes T4's Tensor Cores:
 
 - INT8/INT4 matrix operations
 - Hardware-accelerated quantized inference
@@ -462,18 +462,18 @@ Latest CUDA 12.2 runtime provides:
 To reproduce these results yourself:
 
 1. **Open the executed notebook:**
-   - [llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb)
+   - [llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)
 
 2. **Run in Google Colab:**
    - Select Runtime > Change runtime type > T4 GPU
    - Run all cells sequentially
 
 3. **Try the interactive notebook:**
-   - [llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb)
+   - [llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb)
 
 ## Conclusion
 
-This executed example demonstrates that llcuda v2.0.6 achieves **134 tokens/sec** on Gemma 3-1B with Tesla T4, making it an excellent choice for:
+This executed example demonstrates that llcuda v2.1.0 achieves **134 tokens/sec** on Gemma 3-1B with Tesla T4, making it an excellent choice for:
 
 - **Interactive applications:** Low latency (690ms median)
 - **Production deployment:** Consistent performance
@@ -481,7 +481,7 @@ This executed example demonstrates that llcuda v2.0.6 achieves **134 tokens/sec*
 - **Research experiments:** Fast iteration cycles
 
 !!! success "Production Ready"
-    With verified 134 tok/s performance and sub-second latency, llcuda v2.0.6 is ready for production LLM inference on Tesla T4 GPUs.
+    With verified 134 tok/s performance and sub-second latency, llcuda v2.1.0 is ready for production LLM inference on Tesla T4 GPUs.
 
 ## Next Steps
 
@@ -492,6 +492,6 @@ This executed example demonstrates that llcuda v2.0.6 achieves **134 tokens/sec*
 
 ## Resources
 
-- **Executed Notebook:** [View on GitHub](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb)
-- **Interactive Notebook:** [Open in Colab](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb)
+- **Executed Notebook:** [View on GitHub](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)
+- **Interactive Notebook:** [Open in Colab](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb)
 - **GitHub Issues:** [Report issues](https://github.com/waqasm86/llcuda/issues)

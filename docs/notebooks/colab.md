@@ -1,6 +1,6 @@
 # Google Colab Usage Guide
 
-Complete guide for using llcuda v2.0.6 on Google Colab with Tesla T4 GPUs.
+Complete guide for using llcuda v2.1.0 on Google Colab with Tesla T4 GPUs.
 
 ## Why Google Colab?
 
@@ -64,7 +64,7 @@ print(f"Compatible: {compat['compatible']}")
 
 **Expected output:**
 ```
-llcuda version: 2.0.6
+llcuda version: 2.1.0
 GPU: Tesla T4
 Compatible: True
 ```
@@ -380,9 +380,9 @@ engine.load_model('/content/drive/MyDrive/models/model.gguf')
 **Solution:**
 ```bash
 # Manual download
-!wget https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.3.tar.gz
+!wget https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz
 !mkdir -p ~/.cache/llcuda/
-!tar -xzf llcuda-binaries-cuda12-t4-v2.0.3.tar.gz -C ~/.cache/llcuda/
+!tar -xzf llcuda-binaries-cuda12-t4-v2.0.6.tar.gz -C ~/.cache/llcuda/
 
 # Retry import
 import llcuda

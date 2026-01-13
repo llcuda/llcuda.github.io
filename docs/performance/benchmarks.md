@@ -1,9 +1,10 @@
 # Performance Benchmarks
 
-Comprehensive benchmarks for llcuda v2.0.6 on Tesla T4 GPUs across different models and configurations.
+Comprehensive benchmarks for llcuda v2.1.0 on Tesla T4 GPUs across different models and configurations.
 
 !!! success "Verified Results"
-    All benchmarks were conducted on real Tesla T4 GPUs in Google Colab with CUDA 12.2 and llcuda v2.0.6.
+    All benchmarks were conducted on real Tesla T4 GPUs in Google Colab with CUDA 12.2 and llcuda v2.1.0.
+    The v2.0.6 binaries used are fully compatible with v2.1.0.
 
 ## Executive Summary
 
@@ -290,4 +291,4 @@ print(f"Latency: {metrics['latency']['p50_ms']:.0f} ms")
 
 Full benchmark data available at:
 - [GitHub Repository](https://github.com/waqasm86/llcuda/tree/main/benchmarks)
-- [Colab Notebook](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb)
+- [Colab Notebook](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)

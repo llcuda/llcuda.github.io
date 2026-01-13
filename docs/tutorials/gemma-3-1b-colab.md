@@ -1,11 +1,11 @@
 # Gemma 3-1B Tutorial - Google Colab
 
-Complete tutorial for running Gemma 3-1B with llcuda v2.0.6 on Tesla T4 GPU.
+Complete tutorial for running Gemma 3-1B with llcuda v2.1.0 on Tesla T4 GPU.
 
 ## :rocket: Open in Google Colab
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width: 250px;">
   </a>
 </div>
@@ -15,7 +15,7 @@ Complete tutorial for running Gemma 3-1B with llcuda v2.0.6 on Tesla T4 GPU.
 This comprehensive 14-step tutorial demonstrates:
 
 1. **GPU Verification** - Detect Tesla T4 and check compatibility
-2. **Installation** - Install llcuda v2.0.6 from GitHub
+2. **Installation** - Install llcuda v2.1.0 from GitHub
 3. **Binary Download** - Auto-download CUDA binaries (~266 MB)
 4. **GPU Compatibility** - Verify llcuda can use the GPU
 5. **Model Loading** - Load Gemma 3-1B-IT from Unsloth HuggingFace
@@ -54,12 +54,12 @@ Real execution results from Google Colab Tesla T4:
 # Tesla T4, 7.5, 15360 MiB
 ```
 
-### Step 2: Install llcuda v2.0.6
+### Step 2: Install llcuda v2.1.0
 
 ```python
 !pip install -q git+https://github.com/waqasm86/llcuda.git
 
-# ✅ llcuda v2.0.6 installed successfully!
+# ✅ llcuda v2.1.0 installed successfully!
 ```
 
 ### Step 3: Import and Download Binaries
@@ -220,14 +220,14 @@ engine.load_model(
 
 ### What if I don't have T4?
 
-llcuda v2.0.6 is optimized for Tesla T4. Other GPUs may work but performance will vary. The binaries are compiled for SM 7.5 (T4's compute capability).
+llcuda v2.1.0 is optimized for Tesla T4. Other GPUs may work but performance will vary. The binaries are compiled for SM 7.5 (T4's compute capability).
 
 ---
 
 ## :rocket: Get Started Now!
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb" target="_blank" class="md-button md-button--primary">
+  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank" class="md-button md-button--primary">
     Open Tutorial in Colab
   </a>
 </div>

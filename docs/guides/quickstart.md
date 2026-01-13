@@ -1,6 +1,6 @@
 # Quick Start
 
-Get started with llcuda v2.0.6 in 5 minutes!
+Get started with llcuda v2.1.0 in 5 minutes!
 
 ## :rocket: 5-Minute Quickstart
 
@@ -20,7 +20,7 @@ import llcuda
 
 # Check version
 print(f"llcuda version: {llcuda.__version__}")
-# Output: 2.0.6
+# Output: 2.1.0
 
 # Verify GPU
 compat = llcuda.check_gpu_compatibility()
@@ -159,7 +159,7 @@ for prompt, result in zip(prompts, results):
 Click the button below to try llcuda in your browser:
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width: 200px;">
   </a>
 </div>

@@ -1,6 +1,6 @@
 # Performance Optimization
 
-Advanced techniques to maximize inference performance with llcuda v2.0.6.
+Advanced techniques to maximize inference performance with llcuda v2.1.0.
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Google Colab Notebooks
 
-Complete collection of ready-to-run Jupyter notebooks for llcuda v2.0.6 on Google Colab with Tesla T4 GPU.
+Complete collection of ready-to-run Jupyter notebooks for llcuda v2.1.0 on Google Colab with Tesla T4 GPU.
 
 ## Overview
 
@@ -10,12 +10,12 @@ llcuda includes 8 comprehensive Google Colab notebooks covering installation, in
 
 ### 1. Gemma 3-1B Tutorial (Recommended)
 
-**File:** `llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb`
+**File:** `llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb`
 
-Complete guide for using llcuda v2.0.6 with Unsloth GGUF models on Tesla T4 GPU.
+Complete guide for using llcuda v2.1.0 with Unsloth GGUF models on Tesla T4 GPU.
 
 **What it covers:**
-- ✅ Install llcuda v2.0.6 from GitHub
+- ✅ Install llcuda v2.1.0 from GitHub
 - ✅ Auto-download CUDA binaries from GitHub Releases
 - ✅ Load Gemma 3-1B-IT GGUF from Unsloth
 - ✅ Fast inference with FlashAttention (134 tok/s verified)
@@ -27,7 +27,7 @@ Complete guide for using llcuda v2.0.6 with Unsloth GGUF models on Tesla T4 GPU.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -38,7 +38,7 @@ Complete guide for using llcuda v2.0.6 with Unsloth GGUF models on Tesla T4 GPU.
 
 ### 2. Gemma 3-1B Executed Example
 
-**File:** `llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb`
+**File:** `llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb`
 
 Live execution output from Tesla T4 GPU showing real performance results.
 
@@ -57,7 +57,7 @@ Live execution output from Tesla T4 GPU showing real performance results.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>

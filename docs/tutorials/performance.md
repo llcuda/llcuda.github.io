@@ -7,7 +7,7 @@ Learn how to optimize llcuda for maximum throughput and minimum latency on Tesla
 
 ## Performance Overview
 
-llcuda v2.0.6 achieves exceptional performance on Tesla T4:
+llcuda v2.1.0 achieves exceptional performance on Tesla T4:
 
 - **Gemma 3-1B:** 134 tok/s (verified)
 - **Latency:** < 700ms median
@@ -117,7 +117,7 @@ engine.load_model(
 
 ### 5. Flash Attention
 
-llcuda v2.0.6 includes FlashAttention by default:
+llcuda v2.1.0 includes FlashAttention by default:
 
 ```python
 # FlashAttention is automatically enabled for:

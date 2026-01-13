@@ -79,7 +79,7 @@ twitter:image: https://llcuda.github.io/assets/images/social-card.png
 Try llcuda on Google Colab right now!
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width: 200px;">
   </a>
 </div>
@@ -111,6 +111,7 @@ print(f"Speed: {result.tokens_per_sec:.1f} tokens/sec")
 
 !!! success "First Run Downloads"
     CUDA binaries (266 MB) download automatically from GitHub Releases v2.0.6 on first import.
+    These v2.0.6 binaries are fully compatible with llcuda v2.1.0+.
     Subsequent runs use cached binaries - instant startup!
 
 ## :chart_with_upwards_trend: Verified Performance
@@ -307,14 +308,16 @@ Real Google Colab Tesla T4 results with **proven 3x faster performance**:
 
 </div>
 
-## :sparkles: What's New in v2.0.6
+## :sparkles: What's New in v2.1.0
 
-- **GitHub-Only Distribution** - Removed PyPI dependency completely
+- **Four New API Modules** - Quantization, Unsloth Integration, CUDA Optimization, Advanced Inference
+- **Seamless Unsloth Integration** - Direct loading and GGUF export with LoRA merging
+- **29 Quantization Formats** - Including NF4, Q4_K_M, Q5_K_M, Q8_0, F16
+- **CUDA Graphs** - 20-40% latency reduction with optimized kernel execution
+- **Triton Kernels** - Custom GPU kernels for enhanced performance
+- **FlashAttention v2** - 2-3x faster attention for long contexts
 - **Verified Performance** - Real Tesla T4 results: **134 tok/s** on Gemma 3-1B
-- **Updated Bootstrap** - Auto-download from GitHub Releases v2.0.6
-- **Comprehensive Tutorials** - New Colab notebooks with live execution outputs
-- **Enhanced Documentation** - Complete guides and API reference
-- **Same Proven Binaries** - Uses stable v2.0.3 CUDA binaries (identical SHA256)
+- **Binary Compatibility** - Uses stable v2.0.6 CUDA binaries (same SHA256)
 
 [:octicons-arrow-right-24: Read Changelog](https://github.com/waqasm86/llcuda/blob/main/CHANGELOG.md){ .md-button }
 

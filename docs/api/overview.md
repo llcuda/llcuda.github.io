@@ -1,6 +1,6 @@
 # API Reference Overview
 
-Complete API documentation for llcuda v2.0.6.
+Complete API documentation for llcuda v2.1.0.
 
 ## :material-puzzle: Main Components
 

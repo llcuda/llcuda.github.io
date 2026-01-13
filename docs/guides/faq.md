@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-Common questions and answers about llcuda v2.0.6.
+Common questions and answers about llcuda v2.1.0.
 
 ## General Questions
 
@@ -16,7 +16,7 @@ llcuda is a Python library for fast LLM inference on NVIDIA GPUs, specifically o
 
 ### Why Tesla T4 only?
 
-llcuda v2.0.6 is optimized exclusively for Tesla T4 (compute capability 7.5) to maximize performance:
+llcuda v2.1.0 is optimized exclusively for Tesla T4 (compute capability 7.5) to maximize performance:
 
 - Tensor Core optimizations for SM 7.5
 - FlashAttention tuned for Turing architecture
@@ -29,7 +29,7 @@ For other GPUs, use llcuda v1.2.2 which supports SM 5.0-8.9.
 
 | Solution | Speed (Gemma 3-1B) | Setup | Ease of Use |
 |----------|---------|-------|-------------|
-| **llcuda v2.0.6** | **134 tok/s** | 1 min | Excellent |
+| **llcuda v2.1.0** | **134 tok/s** | 1 min | Excellent |
 | transformers | 45 tok/s | 5 min | Good |
 | vLLM | 85 tok/s | 10 min | Moderate |
 | llama.cpp CLI | 128 tok/s | 15 min | Moderate |
@@ -56,7 +56,7 @@ No! llcuda includes all necessary CUDA binaries. You only need:
 
 ### Can I install from PyPI?
 
-llcuda v2.0.6 is GitHub-only for now. Use:
+llcuda v2.1.0 is GitHub-only for now. Use:
 ```bash
 pip install git+https://github.com/waqasm86/llcuda.git
 ```
@@ -69,7 +69,7 @@ To keep the pip package small (~62 KB), CUDA binaries (266 MB) download automati
 
 ### Which GPUs are supported?
 
-llcuda v2.0.6: **Tesla T4 only** (SM 7.5)
+llcuda v2.1.0: **Tesla T4 only** (SM 7.5)
 
 llcuda v1.2.2: All GPUs with SM 5.0+ (Maxwell through Ada Lovelace)
 
@@ -79,7 +79,7 @@ Yes, but not recommended. Set `gpu_layers=0` for CPU mode. Performance drops fro
 
 ### Does llcuda work on Windows?
 
-llcuda v2.0.6 is Linux-only (Google Colab, Ubuntu). For Windows, compile from source or use WSL2.
+llcuda v2.1.0 is Linux-only (Google Colab, Ubuntu). For Windows, compile from source or use WSL2.
 
 ### What Python versions are supported?
 

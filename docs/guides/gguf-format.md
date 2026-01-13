@@ -1,6 +1,6 @@
 # GGUF Format Guide
 
-Complete guide to the GGUF (GPT-Generated Unified Format) model format used by llcuda v2.0.6.
+Complete guide to the GGUF (GPT-Generated Unified Format) model format used by llcuda v2.1.0.
 
 ## What is GGUF?
 
@@ -233,7 +233,7 @@ print(f"File size: {reader.file_size / 1024**3:.2f} GB")
 
 ### Supported Architectures
 
-llcuda v2.0.6 supports these model architectures via GGUF:
+llcuda v2.1.0 supports these model architectures via GGUF:
 
 ✅ **LLaMA** (LLaMA, LLaMA-2, LLaMA-3, LLaMA-3.1, LLaMA-3.2)
 ✅ **Gemma** (Gemma, Gemma-2, Gemma-3)

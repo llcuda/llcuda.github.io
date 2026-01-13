@@ -1,6 +1,6 @@
 # GPU Device Management
 
-Complete API for GPU device detection, compatibility checking, and CUDA management in llcuda v2.0.6.
+Complete API for GPU device detection, compatibility checking, and CUDA management in llcuda v2.1.0.
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Installation Guide
 
-Install llcuda v2.0.6 directly from GitHub - **No PyPI needed!**
+Install llcuda v2.1.0 directly from GitHub - **No PyPI needed!**
 
 ## :rocket: Quick Install
 
@@ -22,7 +22,7 @@ This single command will:
 ### Method 2: Install from Specific Release
 
 ```bash
-pip install https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-2.0.6-py3-none-any.whl
+pip install https://github.com/waqasm86/llcuda/releases/download/v2.1.0/llcuda-2.1.0-py3-none-any.whl
 ```
 
 ### Method 3: Install from Source (Development)
@@ -48,6 +48,7 @@ pip install -e .
 - **Size:** 266 MB (one-time download, cached locally)
 - **Triggered:** On first `import llcuda`
 - **Location:** `~/.cache/llcuda/` or `<package>/binaries/`
+- **Compatibility:** v2.0.6 binaries work with llcuda v2.1.0+
 
 **Binary Package Contents:**
 ```
@@ -110,7 +111,7 @@ llcuda-binaries-cuda12-t4-v2.0.6.tar.gz (266 MB)
 
     # 3. Test installation
     python3 -c "import llcuda; print(llcuda.__version__)"
-    # Output: 2.0.6
+    # Output: 2.1.0
     ```
 
     **System Dependencies (usually pre-installed):**
@@ -176,7 +177,7 @@ import llcuda
 
 # 1. Check version
 print(f"llcuda version: {llcuda.__version__}")
-# Expected: 2.0.6
+# Expected: 2.1.0
 
 # 2. Check GPU compatibility
 compat = llcuda.check_gpu_compatibility()

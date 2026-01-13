@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-Solutions to common issues with llcuda v2.0.6 on Tesla T4 GPUs.
+Solutions to common issues with llcuda v2.1.0 on Tesla T4 GPUs.
 
 ## Installation Issues
 
@@ -13,11 +13,11 @@ ERROR: Could not find a version that satisfies the requirement llcuda
 
 **Solution:**
 ```bash
-# Install from GitHub (not PyPI for v2.0.6)
+# Install from GitHub (not PyPI for v2.1.0)
 pip install git+https://github.com/waqasm86/llcuda.git
 
 # Or use specific release
-pip install https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-2.0.6-py3-none-any.whl
+pip install https://github.com/waqasm86/llcuda/releases/download/v2.1.0/llcuda-2.1.0-py3-none-any.whl
 ```
 
 ### Binary download fails
@@ -79,7 +79,7 @@ GPU: Tesla P100 (SM 6.0)
 ```
 
 **Solution:**
-llcuda v2.0.6 is Tesla T4-only. For other GPUs, use v1.2.2:
+llcuda v2.1.0 is Tesla T4-only. For other GPUs, use v1.2.2:
 ```bash
 pip install llcuda==1.2.2
 ```
