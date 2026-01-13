@@ -1,31 +1,43 @@
 ---
-title: llcuda v2.0.6 - Tesla T4 CUDA Inference Engine
-description: Fast LLM inference on Tesla T4 GPUs with CUDA 12 and FlashAttention. Verified 134 tokens/sec on Gemma 3-1B. GitHub-only distribution with auto-downloading binaries for Google Colab.
-keywords: llcuda, CUDA, Tesla T4, LLM inference, FlashAttention, GGUF, Unsloth, Google Colab, GPU acceleration, machine learning, deep learning, 134 tokens per second
+title: llcuda v2.1.0 - Tesla T4 CUDA Inference Engine
+description: Fast LLM inference on Tesla T4 GPUs with CUDA 12. Complete Unsloth integration, 29 quantization formats, CUDA Graphs, Triton kernels, FlashAttention. Verified 134 tokens/sec on Gemma 3-1B.
+keywords: llcuda, CUDA, Tesla T4, LLM inference, FlashAttention, GGUF, Unsloth, quantization, NF4, CUDA Graphs, Triton, Google Colab, GPU acceleration, machine learning, deep learning, 134 tokens per second
 author: Waqas Muhammad
-og:title: llcuda v2.0.6 - Tesla T4 CUDA Inference Engine
+og:title: llcuda v2.1.0 - Tesla T4 CUDA Inference Engine
 og:description: Fast LLM inference on Tesla T4 GPUs with verified 134 tokens/sec performance
 og:image: https://llcuda.github.io/assets/images/social-card.png
 og:url: https://llcuda.github.io/
 twitter:card: summary_large_image
-twitter:title: llcuda v2.0.6 - Tesla T4 CUDA Inference
+twitter:title: llcuda v2.1.0 - Tesla T4 CUDA Inference
 twitter:description: Fast LLM inference on Tesla T4 GPUs with verified 134 tokens/sec performance
 twitter:image: https://llcuda.github.io/assets/images/social-card.png
 ---
 
-# llcuda v2.0.6: Tesla T4 CUDA Inference
+# llcuda v2.1.0: Tesla T4 CUDA Inference
 
 <div style="text-align: center; margin: 2em 0;">
-  <img src="https://img.shields.io/badge/version-2.0.6-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/version-2.1.0-blue.svg" alt="Version">
   <img src="https://img.shields.io/badge/python-3.11+-green.svg" alt="Python">
   <img src="https://img.shields.io/badge/CUDA-12.x-orange.svg" alt="CUDA">
   <img src="https://img.shields.io/badge/GPU-Tesla%20T4-green.svg" alt="GPU">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
 </div>
 
-**Fast LLM inference on Tesla T4 GPUs with FlashAttention and Tensor Core optimization.** Built exclusively for Google Colab and Tesla T4 hardware with GitHub-only distribution.
+**Fast LLM inference on Tesla T4 GPUs with complete Unsloth integration and advanced CUDA optimization.** Built exclusively for Google Colab and Tesla T4 hardware with GitHub-only distribution.
 
-## :rocket: Why llcuda v2.0.6?
+## :rocket: What's New in v2.1.0?
+
+!!! tip "Four New Powerful API Modules"
+    v2.1.0 introduces seamless Unsloth fine-tuning to deployment workflow:
+
+    - **Quantization API**: 29 formats including NF4, Q4_K_M, Q5_K_M, Q8_0, F16
+    - **Unsloth Integration**: Direct loading and GGUF export with LoRA merging
+    - **CUDA Optimization**: CUDA Graphs (20-40% latency reduction), Triton kernels
+    - **Advanced Inference**: FlashAttention v2, KV-cache optimization, batch processing
+
+    [Explore v2.1+ APIs →](api/new-apis.md){ .md-button .md-button--primary }
+
+## :rocket: Why llcuda v2.1.0?
 
 === "Tesla T4 Optimized"
     Built specifically for Tesla T4 (SM 7.5) with:
