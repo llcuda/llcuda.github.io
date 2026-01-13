@@ -1,6 +1,6 @@
 # llcuda Documentation Website
 
-Official documentation for **llcuda v2.0.6** - Tesla T4 CUDA Inference
+Official documentation for **llcuda v2.1.0** - Tesla T4 CUDA Inference
 
 This repository contains the source files for the llcuda documentation website built with MkDocs Material.
 
