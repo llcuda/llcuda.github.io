@@ -51,7 +51,7 @@ twitter:image: https://llcuda.github.io/assets/images/social-card.png
     No PyPI dependency:
 
     ```bash
-    pip install git+https://github.com/waqasm86/llcuda.git
+    pip install git+https://github.com/llcuda/llcuda.git
     ```
 
     - Binaries auto-download from GitHub Releases (266 MB)
@@ -79,7 +79,7 @@ twitter:image: https://llcuda.github.io/assets/images/social-card.png
 Try llcuda on Google Colab right now!
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width: 200px;">
   </a>
 </div>
@@ -88,7 +88,7 @@ Try llcuda on Google Colab right now!
 
 ```python
 # Install from GitHub
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 
 # Run inference
 import llcuda
@@ -319,13 +319,13 @@ Real Google Colab Tesla T4 results with **proven 3x faster performance**:
 - **Verified Performance** - Real Tesla T4 results: **134 tok/s** on Gemma 3-1B
 - **Binary Compatibility** - Uses stable v2.0.6 CUDA binaries (same SHA256)
 
-[:octicons-arrow-right-24: Read Changelog](https://github.com/waqasm86/llcuda/blob/main/CHANGELOG.md){ .md-button }
+[:octicons-arrow-right-24: Read Changelog](https://github.com/llcuda/llcuda/blob/main/CHANGELOG.md){ .md-button }
 
 ## :handshake: Community & Support
 
-- **GitHub Repository**: [github.com/waqasm86/llcuda](https://github.com/waqasm86/llcuda)
-- **GitHub Releases**: [Releases & Downloads](https://github.com/waqasm86/llcuda/releases)
-- **Bug Reports**: [GitHub Issues](https://github.com/waqasm86/llcuda/issues)
+- **GitHub Repository**: [github.com/llcuda/llcuda](https://github.com/llcuda/llcuda)
+- **GitHub Releases**: [Releases & Downloads](https://github.com/llcuda/llcuda/releases)
+- **Bug Reports**: [GitHub Issues](https://github.com/llcuda/llcuda/issues)
 - **Email**: waqasm86@gmail.com
 
 ## :balance_scale: License

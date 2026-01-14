@@ -35,7 +35,7 @@ Once the organization is created, transfer the repository:
 
 **Option A: Via GitHub Web Interface**
 
-1. Go to: https://github.com/waqasm86/llcuda.github.io/settings
+1. Go to: https://github.com/llcuda/llcuda.github.io/settings
 2. Scroll down to **"Danger Zone"**
 3. Click **"Transfer"**
 4. Enter the new owner: `llcuda`
@@ -46,7 +46,7 @@ Once the organization is created, transfer the repository:
 
 ```bash
 # You need to run this after creating the organization
-gh repo transfer waqasm86/llcuda.github.io llcuda --yes
+gh repo transfer llcuda/llcuda.github.io llcuda --yes
 ```
 
 ---
@@ -138,9 +138,9 @@ mkdocs gh-deploy
 | What | Before | After |
 |------|--------|-------|
 | **Organization** | waqasm86 (user) | llcuda (org) |
-| **Repository** | waqasm86/llcuda.github.io | llcuda/llcuda.github.io |
+| **Repository** | llcuda/llcuda.github.io | llcuda/llcuda.github.io |
 | **Website URL** | https://waqasm86.github.io/llcuda.github.io/ | https://llcuda.github.io/ |
-| **Git Remote** | git@github.com:waqasm86/llcuda.github.io.git | git@github.com:llcuda/llcuda.github.io.git |
+| **Git Remote** | git@github.com:llcuda/llcuda.github.io.git | git@github.com:llcuda/llcuda.github.io.git |
 
 ---
 

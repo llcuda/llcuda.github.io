@@ -7,7 +7,7 @@ Install llcuda v2.1.0 directly from GitHub - **No PyPI needed!**
 ### Method 1: Direct from GitHub (Recommended)
 
 ```bash
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 This single command will:
@@ -22,13 +22,13 @@ This single command will:
 ### Method 2: Install from Specific Release
 
 ```bash
-pip install https://github.com/waqasm86/llcuda/releases/download/v2.1.0/llcuda-2.1.0-py3-none-any.whl
+pip install https://github.com/llcuda/llcuda/releases/download/v2.1.0/llcuda-2.1.0-py3-none-any.whl
 ```
 
 ### Method 3: Install from Source (Development)
 
 ```bash
-git clone https://github.com/waqasm86/llcuda.git
+git clone https://github.com/llcuda/llcuda.git
 cd llcuda
 pip install -e .
 ```
@@ -43,7 +43,7 @@ pip install -e .
 - **Contents:** Core Python package, API, bootstrap code
 
 ### CUDA Binaries (Auto-Downloaded)
-- **Source:** [GitHub Releases v2.0.6](https://github.com/waqasm86/llcuda/releases/tag/v2.0.6)
+- **Source:** [GitHub Releases v2.0.6](https://github.com/llcuda/llcuda/releases/tag/v2.0.6)
 - **URL:** `llcuda-binaries-cuda12-t4-v2.0.6.tar.gz`
 - **Size:** 266 MB (one-time download, cached locally)
 - **Triggered:** On first `import llcuda`
@@ -76,7 +76,7 @@ llcuda-binaries-cuda12-t4-v2.0.6.tar.gz (266 MB)
 
     ```python
     # 1. Install
-    !pip install -q git+https://github.com/waqasm86/llcuda.git
+    !pip install -q git+https://github.com/llcuda/llcuda.git
 
     # 2. Import (triggers binary download on first run)
     import llcuda
@@ -107,7 +107,7 @@ llcuda-binaries-cuda12-t4-v2.0.6.tar.gz (266 MB)
     nvidia-smi  # Should show CUDA 12.x
 
     # 2. Install llcuda
-    pip install git+https://github.com/waqasm86/llcuda.git
+    pip install git+https://github.com/llcuda/llcuda.git
 
     # 3. Test installation
     python3 -c "import llcuda; print(llcuda.__version__)"
@@ -132,7 +132,7 @@ llcuda-binaries-cuda12-t4-v2.0.6.tar.gz (266 MB)
     # Settings → Accelerator → GPU T4 x2
 
     # 2. Install
-    !pip install -q git+https://github.com/waqasm86/llcuda.git
+    !pip install -q git+https://github.com/llcuda/llcuda.git
 
     # 3. Import and verify
     import llcuda
@@ -160,7 +160,7 @@ llcuda-binaries-cuda12-t4-v2.0.6.tar.gz (266 MB)
     sudo apt install python3.11 python3-pip
 
     # 3. Install llcuda
-    pip3 install git+https://github.com/waqasm86/llcuda.git
+    pip3 install git+https://github.com/llcuda/llcuda.git
 
     # 4. Test
     python3 -c "import llcuda; print(llcuda.__version__)"
@@ -207,7 +207,7 @@ If automatic download fails, install binaries manually:
 
 ```bash
 # 1. Download binary package
-wget https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz
+wget https://github.com/llcuda/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz
 
 # 2. Verify checksum
 echo "5a27d2e1a73ae3d2f1d2ba8cf557b76f54200208c8df269b1bd0d9ee176bb49d  llcuda-binaries-cuda12-t4-v2.0.6.tar.gz" | sha256sum -c
@@ -290,13 +290,13 @@ huggingface-hub>=0.19.0  # For model downloads
 ### Upgrade to Latest Version
 
 ```bash
-pip install --upgrade git+https://github.com/waqasm86/llcuda.git
+pip install --upgrade git+https://github.com/llcuda/llcuda.git
 ```
 
 ### Force Reinstall
 
 ```bash
-pip install --upgrade --force-reinstall --no-cache-dir git+https://github.com/waqasm86/llcuda.git
+pip install --upgrade --force-reinstall --no-cache-dir git+https://github.com/llcuda/llcuda.git
 ```
 
 ### Clear Cache and Reinstall
@@ -307,7 +307,7 @@ rm -rf ~/.cache/llcuda/
 
 # Reinstall
 pip uninstall llcuda -y
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 ---
@@ -353,7 +353,7 @@ print(response.status_code)  # Should be 200
 pip list | grep llcuda
 
 # Reinstall
-pip install --force-reinstall git+https://github.com/waqasm86/llcuda.git
+pip install --force-reinstall git+https://github.com/llcuda/llcuda.git
 ```
 
 ### GPU Not Detected
@@ -380,4 +380,4 @@ python3 -c "import subprocess; print(subprocess.run(['nvidia-smi'], capture_outp
 
 ---
 
-**Need help?** [Open an issue on GitHub](https://github.com/waqasm86/llcuda/issues)
+**Need help?** [Open an issue on GitHub](https://github.com/llcuda/llcuda/issues)

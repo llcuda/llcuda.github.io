@@ -12,7 +12,7 @@
       "priceCurrency": "USD"
     },
     "description": "Fast LLM inference on Tesla T4 GPUs with CUDA 12, FlashAttention, and Unsloth integration. Verified 134 tokens/sec on Gemma 3-1B.",
-    "softwareVersion": "2.0.6",
+    "softwareVersion": "2.1.0",
     "author": {
       "@type": "Person",
       "name": "Waqas Muhammad",
@@ -28,7 +28,7 @@
     "url": "https://llcuda.github.io/",
     "image": "https://llcuda.github.io/assets/images/social-card.png",
     "screenshot": "https://llcuda.github.io/assets/images/screenshot.png",
-    "codeRepository": "https://github.com/waqasm86/llcuda",
+    "codeRepository": "https://github.com/llcuda/llcuda",
     "programmingLanguage": [
       "Python",
       "C++",
@@ -81,7 +81,7 @@
     "@type": "WebSite",
     "name": "llcuda Documentation",
     "url": "https://llcuda.github.io/",
-    "description": "Official documentation for llcuda v2.0.6 - Tesla T4 CUDA Inference Engine",
+    "description": "Official documentation for llcuda v2.1.0 - Tesla T4 CUDA Inference Engine",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://llcuda.github.io/search/?q={search_term_string}",
@@ -98,7 +98,7 @@
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "llcuda v2.0.6 - Tesla T4 CUDA Inference Documentation",
+    "headline": "llcuda v2.1.0 - Tesla T4 CUDA Inference Documentation",
     "description": "Comprehensive documentation for llcuda, a fast LLM inference engine for Tesla T4 GPUs",
     "author": {
       "@type": "Person",

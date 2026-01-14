@@ -38,7 +38,7 @@ graph LR
 !pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
 
 # Install llcuda for deployment
-!pip install git+https://github.com/waqasm86/llcuda.git
+!pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 ## Step 2: Fine-tune with Unsloth
@@ -240,7 +240,7 @@ Here's a complete Colab notebook workflow:
 ```python
 # Cell 1: Setup
 !pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
-!pip install git+https://github.com/waqasm86/llcuda.git
+!pip install git+https://github.com/llcuda/llcuda.git
 
 # Cell 2: Load and Fine-tune
 from unsloth import FastLanguageModel

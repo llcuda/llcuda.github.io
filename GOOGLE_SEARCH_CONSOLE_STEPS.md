@@ -145,7 +145,7 @@ After sitemap is processed successfully, consider:
 If you encounter issues:
 - Google Search Console Help: https://support.google.com/webmasters
 - GitHub Pages Status: https://www.githubstatus.com/
-- llcuda Issues: https://github.com/waqasm86/llcuda/issues
+- llcuda Issues: https://github.com/llcuda/llcuda/issues
 
 ---
 **Status**: ✅ Ready for re-submission

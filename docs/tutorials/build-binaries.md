@@ -52,7 +52,7 @@ gcc --version  # Should be 11.x or 12.x
 The easiest way to build binaries is using the provided Colab notebook:
 
 1. **Open the build notebook:**
-   - [build_llcuda_v2_t4_colab.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb)
+   - [build_llcuda_v2_t4_colab.ipynb](https://github.com/llcuda/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb)
 
 2. **Select T4 GPU runtime:**
    - Runtime > Change runtime type > GPU > T4
@@ -164,7 +164,7 @@ llcuda includes a build script for automation:
 
 ```bash
 # Clone llcuda repository
-git clone https://github.com/waqasm86/llcuda.git
+git clone https://github.com/llcuda/llcuda.git
 cd llcuda/scripts
 
 # Run build script
@@ -387,7 +387,7 @@ If you build optimized binaries for different configurations:
 
 ## Resources
 
-- **Build Notebook:** [build_llcuda_v2_t4_colab.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb)
+- **Build Notebook:** [build_llcuda_v2_t4_colab.ipynb](https://github.com/llcuda/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb)
 - **llama.cpp:** [GitHub](https://github.com/ggerganov/llama.cpp)
 - **CUDA Toolkit:** [Download](https://developer.nvidia.com/cuda-downloads)
 - **CMake Documentation:** [cmake.org](https://cmake.org/documentation/)

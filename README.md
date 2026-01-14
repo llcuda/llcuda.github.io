@@ -53,7 +53,7 @@ docs/
 
 ```bash
 # Clone this repository
-git clone https://github.com/waqasm86/llcuda.github.io.git
+git clone https://github.com/llcuda/llcuda.github.io.git
 cd llcuda.github.io
 
 # Install dependencies
@@ -116,7 +116,7 @@ This documentation uses [Material for MkDocs](https://squidfunk.github.io/mkdocs
 
 This is the documentation website for llcuda. The main project repository is:
 
-**https://github.com/waqasm86/llcuda**
+**https://github.com/llcuda/llcuda**
 
 ## 📄 License
 

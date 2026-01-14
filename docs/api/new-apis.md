@@ -129,4 +129,4 @@ print(f"{result.text} ({result.tokens_per_sec:.1f} tok/s)")
 
 - Try the [Quick Start Guide](../guides/quickstart.md)
 - Read the [Complete API Reference](../../API_REFERENCE.md)
-- Explore [Examples](https://github.com/waqasm86/llcuda/tree/main/examples)
+- Explore [Examples](https://github.com/llcuda/llcuda/tree/main/examples)

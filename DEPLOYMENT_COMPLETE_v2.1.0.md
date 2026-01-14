@@ -213,17 +213,17 @@ GitHub Pages CDN propagation typically takes:
 ## 📚 Related Resources
 
 ### GitHub Repositories
-- **Main Repo:** https://github.com/waqasm86/llcuda (v2.1.0 ✅)
+- **Main Repo:** https://github.com/llcuda/llcuda (v2.1.0 ✅)
 - **Docs Repo:** https://github.com/llcuda/llcuda.github.io (v2.1.0 ✅)
 
 ### Documentation
 - **Live Site:** https://llcuda.github.io/ (v2.1.0 ✅)
-- **Main README:** https://github.com/waqasm86/llcuda/blob/main/README.md
-- **API Reference:** https://github.com/waqasm86/llcuda/blob/main/API_REFERENCE.md
+- **Main README:** https://github.com/llcuda/llcuda/blob/main/README.md
+- **API Reference:** https://github.com/llcuda/llcuda/blob/main/API_REFERENCE.md
 
 ### Installation
 ```bash
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 ---

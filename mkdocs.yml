@@ -2,8 +2,8 @@ site_name: llcuda v2.1.0 - Tesla T4 CUDA Inference
 site_url: https://llcuda.github.io/
 site_description: Fast LLM inference on Tesla T4 GPUs with CUDA 12. Complete Unsloth integration, 29 quantization formats, CUDA Graphs, Triton kernels, FlashAttention. Verified 134 tokens/sec on Gemma 3-1B. Perfect for Google Colab and production deployment.
 site_author: Waqas Muhammad
-repo_name: waqasm86/llcuda
-repo_url: https://github.com/waqasm86/llcuda
+repo_name: llcuda/llcuda
+repo_url: https://github.com/llcuda/llcuda
 edit_uri: ""
 copyright: Copyright &copy; 2024-2026 Waqas Muhammad
 
@@ -143,7 +143,7 @@ extra:
           data: 0
           note: >-
             Thanks for your feedback! Help us improve by
-            <a href="https://github.com/waqasm86/llcuda/issues/new" target="_blank" rel="noopener">opening an issue</a>.
+            <a href="https://github.com/llcuda/llcuda/issues/new" target="_blank" rel="noopener">opening an issue</a>.
   consent:
     title: Cookie consent
     description: >-
@@ -195,7 +195,7 @@ nav:
       - Overview: notebooks/index.md
       - Colab Notebooks: notebooks/colab.md
   - Links:
-      - GitHub Repository: https://github.com/waqasm86/llcuda
-      - GitHub Releases: https://github.com/waqasm86/llcuda/releases
-      - Issues & Support: https://github.com/waqasm86/llcuda/issues
-      - Changelog: https://github.com/waqasm86/llcuda/blob/main/CHANGELOG.md
+      - GitHub Repository: https://github.com/llcuda/llcuda
+      - GitHub Releases: https://github.com/llcuda/llcuda/releases
+      - Issues & Support: https://github.com/llcuda/llcuda/issues
+      - Changelog: https://github.com/llcuda/llcuda/blob/main/CHANGELOG.md

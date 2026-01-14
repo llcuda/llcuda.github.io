@@ -14,10 +14,10 @@ ERROR: Could not find a version that satisfies the requirement llcuda
 **Solution:**
 ```bash
 # Install from GitHub (not PyPI for v2.1.0)
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 
 # Or use specific release
-pip install https://github.com/waqasm86/llcuda/releases/download/v2.1.0/llcuda-2.1.0-py3-none-any.whl
+pip install https://github.com/llcuda/llcuda/releases/download/v2.1.0/llcuda-2.1.0-py3-none-any.whl
 ```
 
 ### Binary download fails
@@ -34,7 +34,7 @@ import requests
 import tarfile
 from pathlib import Path
 
-url = "https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz"
+url = "https://github.com/llcuda/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz"
 cache_dir = Path.home() / ".cache" / "llcuda"
 cache_dir.mkdir(parents=True, exist_ok=True)
 
@@ -218,7 +218,7 @@ engine.load_model(
 # Reinstall with cache clear
 pip uninstall llcuda -y
 pip cache purge
-pip install git+https://github.com/waqasm86/llcuda.git --no-cache-dir
+pip install git+https://github.com/llcuda/llcuda.git --no-cache-dir
 ```
 
 ### "LD_LIBRARY_PATH not set"
@@ -279,7 +279,7 @@ engine.load_model("model.gguf", verbose=True, silent=False)
        print(f"Error: {result.error_message}")
    ```
 
-2. **GitHub Issues:** [github.com/waqasm86/llcuda/issues](https://github.com/waqasm86/llcuda/issues)
+2. **GitHub Issues:** [github.com/llcuda/llcuda/issues](https://github.com/llcuda/llcuda/issues)
 
 3. **Include in bug reports:**
    - llcuda version (`llcuda.__version__`)
@@ -293,7 +293,7 @@ engine.load_model("model.gguf", verbose=True, silent=False)
 
 - [ ] GPU is Tesla T4 (check with `nvidia-smi`)
 - [ ] CUDA 12.0+ installed (check with `nvcc --version`)
-- [ ] Latest llcuda from GitHub (`pip install git+https://github.com/waqasm86/llcuda.git`)
+- [ ] Latest llcuda from GitHub (`pip install git+https://github.com/llcuda/llcuda.git`)
 - [ ] Model exists and is accessible
 - [ ] Port 8090 is available
 - [ ] Sufficient VRAM for model
@@ -305,4 +305,4 @@ engine.load_model("model.gguf", verbose=True, silent=False)
 - [FAQ](faq.md) - Frequently asked questions
 - [Performance Optimization](../tutorials/performance.md) - Speed up inference
 - [First Steps](first-steps.md) - Getting started guide
-- [GitHub Issues](https://github.com/waqasm86/llcuda/issues) - Report bugs
+- [GitHub Issues](https://github.com/llcuda/llcuda/issues) - Report bugs

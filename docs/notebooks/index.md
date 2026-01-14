@@ -27,7 +27,7 @@ Complete guide for using llcuda v2.1.0 with Unsloth GGUF models on Tesla T4 GPU.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -57,7 +57,7 @@ Live execution output from Tesla T4 GPU showing real performance results.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -89,7 +89,7 @@ Build CUDA 12 binaries from source on Tesla T4 GPU.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -114,7 +114,7 @@ Complete build workflow combining llama.cpp and llcuda for Tesla T4.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_unsloth_t4_complete_build.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_unsloth_t4_complete_build.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -138,7 +138,7 @@ Usage guide demonstrating llcuda with Unsloth GGUF models.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_unsloth_tutorial.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_unsloth_tutorial.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -161,7 +161,7 @@ Quick introduction to llcuda basics.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_quickstart_tutorial.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_quickstart_tutorial.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -176,7 +176,7 @@ Advanced usage patterns and optimization techniques.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/p3_llcuda.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/p3_llcuda.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -191,7 +191,7 @@ Extended advanced examples with additional features.
 
 **Open in Colab:**
 <div style="text-align: center; margin: 1em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/p3_1_llcuda.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/p3_1_llcuda.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
   </a>
 </div>
@@ -295,4 +295,4 @@ After running the notebooks:
 
 ---
 
-**All notebooks are maintained at:** [github.com/waqasm86/llcuda/tree/main/notebooks](https://github.com/waqasm86/llcuda/tree/main/notebooks)
+**All notebooks are maintained at:** [github.com/llcuda/llcuda/tree/main/notebooks](https://github.com/llcuda/llcuda/tree/main/notebooks)

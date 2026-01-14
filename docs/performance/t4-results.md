@@ -4,7 +4,7 @@ Deep dive into the verified 134 tok/s performance on NVIDIA Tesla T4 GPUs with l
 
 !!! success "Verified Performance"
     All results verified on real Tesla T4 GPUs in Google Colab with CUDA 12.2 and llcuda v2.1.0.
-    See [executed notebook](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb) for proof.
+    See [executed notebook](https://github.com/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb) for proof.
 
 ## Executive Summary
 
@@ -463,4 +463,4 @@ The combination delivers production-ready performance at minimal cost, with **3x
 - [Benchmarks Overview](benchmarks.md) - All model benchmarks
 - [Optimization Guide](optimization.md) - Performance tuning
 - [Gemma 3-1B Tutorial](../tutorials/gemma-3-1b-colab.md) - Step-by-step guide
-- [Executed Notebook](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb) - Proof of results
+- [Executed Notebook](https://github.com/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb) - Proof of results

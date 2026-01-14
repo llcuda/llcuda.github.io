@@ -290,5 +290,5 @@ print(f"Latency: {metrics['latency']['p50_ms']:.0f} ms")
 ## Benchmark Data
 
 Full benchmark data available at:
-- [GitHub Repository](https://github.com/waqasm86/llcuda/tree/main/benchmarks)
-- [Colab Notebook](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)
+- [GitHub Repository](https://github.com/llcuda/llcuda/tree/main/benchmarks)
+- [Colab Notebook](https://github.com/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)

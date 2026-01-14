@@ -48,7 +48,7 @@ Click any "Open in Colab" button from the [Notebooks Index](index.md), or create
 
 ```python
 # Install from GitHub
-!pip install -q git+https://github.com/waqasm86/llcuda.git
+!pip install -q git+https://github.com/llcuda/llcuda.git
 
 # Import (triggers binary download on first run)
 import llcuda
@@ -380,7 +380,7 @@ engine.load_model('/content/drive/MyDrive/models/model.gguf')
 **Solution:**
 ```bash
 # Manual download
-!wget https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz
+!wget https://github.com/llcuda/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz
 !mkdir -p ~/.cache/llcuda/
 !tar -xzf llcuda-binaries-cuda12-t4-v2.0.6.tar.gz -C ~/.cache/llcuda/
 
@@ -395,7 +395,7 @@ print("Success!")
 
 ```python
 # Install and test in under 5 minutes
-!pip install -q git+https://github.com/waqasm86/llcuda.git
+!pip install -q git+https://github.com/llcuda/llcuda.git
 
 import llcuda
 engine = llcuda.InferenceEngine()
@@ -490,4 +490,4 @@ while True:
 
 **Happy coding on Colab!** 🚀
 
-For issues, visit [GitHub Issues](https://github.com/waqasm86/llcuda/issues)
+For issues, visit [GitHub Issues](https://github.com/llcuda/llcuda/issues)

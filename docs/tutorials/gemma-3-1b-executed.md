@@ -41,15 +41,15 @@ Sat Jan 11 02:15:23 2026
 ### 2. Installation
 
 ```python
-!pip install git+https://github.com/waqasm86/llcuda.git
+!pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 **Output:**
 ```
-Collecting git+https://github.com/waqasm86/llcuda.git
-  Cloning https://github.com/waqasm86/llcuda.git to /tmp/pip-req-build-xxxxxxxx
-  Running command git clone --filter=blob:none --quiet https://github.com/waqasm86/llcuda.git /tmp/pip-req-build-xxxxxxxx
-  Resolved https://github.com/waqasm86/llcuda.git to commit xxxxxxxxx
+Collecting git+https://github.com/llcuda/llcuda.git
+  Cloning https://github.com/llcuda/llcuda.git to /tmp/pip-req-build-xxxxxxxx
+  Running command git clone --filter=blob:none --quiet https://github.com/llcuda/llcuda.git /tmp/pip-req-build-xxxxxxxx
+  Resolved https://github.com/llcuda/llcuda.git to commit xxxxxxxxx
   Installing build dependencies ... done
   Getting requirements to build wheel ... done
   Preparing metadata (pyproject.toml) ... done
@@ -462,14 +462,14 @@ Latest CUDA 12.2 runtime provides:
 To reproduce these results yourself:
 
 1. **Open the executed notebook:**
-   - [llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)
+   - [llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb](https://github.com/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)
 
 2. **Run in Google Colab:**
    - Select Runtime > Change runtime type > T4 GPU
    - Run all cells sequentially
 
 3. **Try the interactive notebook:**
-   - [llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb)
+   - [llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb](https://github.com/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb)
 
 ## Conclusion
 
@@ -492,6 +492,6 @@ This executed example demonstrates that llcuda v2.1.0 achieves **134 tokens/sec*
 
 ## Resources
 
-- **Executed Notebook:** [View on GitHub](https://github.com/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)
-- **Interactive Notebook:** [Open in Colab](https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb)
-- **GitHub Issues:** [Report issues](https://github.com/waqasm86/llcuda/issues)
+- **Executed Notebook:** [View on GitHub](https://github.com/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab_executed.ipynb)
+- **Interactive Notebook:** [Open in Colab](https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb)
+- **GitHub Issues:** [Report issues](https://github.com/llcuda/llcuda/issues)

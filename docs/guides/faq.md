@@ -41,7 +41,7 @@ llcuda is 3x faster than PyTorch and easiest to set up.
 ### How do I install llcuda?
 
 ```bash
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 Binaries auto-download on first import (~266 MB).
@@ -58,7 +58,7 @@ No! llcuda includes all necessary CUDA binaries. You only need:
 
 llcuda v2.1.0 is GitHub-only for now. Use:
 ```bash
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 ### Why do binaries download on first import?
@@ -297,7 +297,7 @@ Yes! llcuda is optimized for Colab T4:
 
 ```python
 # In Colab
-!pip install git+https://github.com/waqasm86/llcuda.git
+!pip install git+https://github.com/llcuda/llcuda.git
 
 import llcuda
 engine = llcuda.InferenceEngine()
@@ -342,7 +342,7 @@ engine.load_model("/content/drive/MyDrive/gemma-3-1b-Q4_K_M.gguf")
 ```bash
 # Reinstall
 pip uninstall llcuda -y
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 ### Binary download fails
@@ -366,7 +366,7 @@ See [Performance Troubleshooting](troubleshooting.md#performance-issues)
 
 Yes! Contributions welcome:
 
-- Bug reports: [GitHub Issues](https://github.com/waqasm86/llcuda/issues)
+- Bug reports: [GitHub Issues](https://github.com/llcuda/llcuda/issues)
 - Feature requests: Open an issue
 - Code: Fork and submit PR
 - Documentation: Help improve docs
@@ -377,7 +377,7 @@ See [Build Binaries Tutorial](../tutorials/build-binaries.md)
 
 ### How do I report bugs?
 
-Open a [GitHub Issue](https://github.com/waqasm86/llcuda/issues/new) with:
+Open a [GitHub Issue](https://github.com/llcuda/llcuda/issues/new) with:
 
 - llcuda version
 - GPU model
@@ -396,4 +396,4 @@ Open a [GitHub Issue](https://github.com/waqasm86/llcuda/issues/new) with:
 
 ## Still have questions?
 
-Ask on [GitHub Discussions](https://github.com/waqasm86/llcuda/discussions) or open an [issue](https://github.com/waqasm86/llcuda/issues).
+Ask on [GitHub Discussions](https://github.com/llcuda/llcuda/discussions) or open an [issue](https://github.com/llcuda/llcuda/issues).

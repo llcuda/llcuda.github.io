@@ -304,7 +304,7 @@ mkdocs gh-deploy
 
 - **MkDocs**: https://www.mkdocs.org/
 - **Material Theme**: https://squidfunk.github.io/mkdocs-material/
-- **llcuda Repository**: https://github.com/waqasm86/llcuda
+- **llcuda Repository**: https://github.com/llcuda/llcuda
 
 ---
 

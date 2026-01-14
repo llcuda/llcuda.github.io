@@ -7,11 +7,11 @@ Get started with llcuda v2.1.0 in 5 minutes!
 ### Step 1: Install llcuda
 
 ```bash
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 !!! tip "Google Colab Users"
-    Add `!` before the command: `!pip install -q git+https://github.com/waqasm86/llcuda.git`
+    Add `!` before the command: `!pip install -q git+https://github.com/llcuda/llcuda.git`
 
 ### Step 2: Import and Verify
 
@@ -159,7 +159,7 @@ for prompt, result in zip(prompts, results):
 Click the button below to try llcuda in your browser:
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width: 200px;">
   </a>
 </div>
@@ -271,7 +271,7 @@ engine.load_model(
 Manual installation:
 
 ```bash
-wget https://github.com/waqasm86/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz
+wget https://github.com/llcuda/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz
 mkdir -p ~/.cache/llcuda
 tar -xzf llcuda-binaries-cuda12-t4-v2.0.6.tar.gz -C ~/.cache/llcuda/
 ```
@@ -302,4 +302,4 @@ tar -xzf llcuda-binaries-cuda12-t4-v2.0.6.tar.gz -C ~/.cache/llcuda/
 
 ---
 
-**Questions?** Check the [FAQ](faq.md) or [open an issue](https://github.com/waqasm86/llcuda/issues)!
+**Questions?** Check the [FAQ](faq.md) or [open an issue](https://github.com/llcuda/llcuda/issues)!

@@ -103,7 +103,7 @@ Add content:
 ### How do I install llcuda?
 
 \`\`\`bash
-pip install git+https://github.com/waqasm86/llcuda.git
+pip install git+https://github.com/llcuda/llcuda.git
 \`\`\`
 
 ### Why GitHub instead of PyPI?

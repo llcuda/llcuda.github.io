@@ -5,7 +5,7 @@ Complete tutorial for running Gemma 3-1B with llcuda v2.1.0 on Tesla T4 GPU.
 ## :rocket: Open in Google Colab
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" style="width: 250px;">
   </a>
 </div>
@@ -57,7 +57,7 @@ Real execution results from Google Colab Tesla T4:
 ### Step 2: Install llcuda v2.1.0
 
 ```python
-!pip install -q git+https://github.com/waqasm86/llcuda.git
+!pip install -q git+https://github.com/llcuda/llcuda.git
 
 # ✅ llcuda v2.1.0 installed successfully!
 ```
@@ -77,7 +77,7 @@ import llcuda
 **Download Output:**
 ```
 📥 Downloading from GitHub releases...
-URL: https://github.com/waqasm86/llcuda/releases/download/v2.0.6/...
+URL: https://github.com/llcuda/llcuda/releases/download/v2.0.6/...
 Downloading T4 binaries: 100% (266.0/266.0 MB)
 ✅ Extraction complete!
 Copied 5 binaries to .../llcuda/binaries/cuda12
@@ -227,7 +227,7 @@ llcuda v2.1.0 is optimized for Tesla T4. Other GPUs may work but performance wil
 ## :rocket: Get Started Now!
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://colab.research.google.com/github/waqasm86/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank" class="md-button md-button--primary">
+  <a href="https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_1_0_gemma3_1b_unsloth_colab.ipynb" target="_blank" class="md-button md-button--primary">
     Open Tutorial in Colab
   </a>
 </div>
@@ -236,4 +236,4 @@ llcuda v2.1.0 is optimized for Tesla T4. Other GPUs may work but performance wil
 
 ---
 
-**Questions?** [Open an issue on GitHub](https://github.com/waqasm86/llcuda/issues)
+**Questions?** [Open an issue on GitHub](https://github.com/llcuda/llcuda/issues)
