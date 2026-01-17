@@ -1,0 +1,240 @@
+site_name: llcuda v2.2.0 - CUDA12 Inference Backend for Unsloth
+site_url: https://llcuda.github.io/
+site_description: CUDA 12 inference backend for Unsloth with multi-GPU support on Kaggle. Deploy fine-tuned models on dual Tesla T4 GPUs with llama.cpp server, GGUF quantization, and Graphistry visualization. Run 70B models with tensor-split architecture.
+site_author: Waqas Muhammad
+repo_name: llcuda/llcuda
+repo_url: https://github.com/llcuda/llcuda
+edit_uri: ""
+copyright: Copyright &copy; 2024-2026 Waqas Muhammad
+
+# SEO and Social Media
+extra:
+  manifest: manifest.json
+  social_cards: true
+
+theme:
+  name: material
+  language: en
+  favicon: assets/images/logo.svg
+  logo: assets/images/logo.svg
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+  - meta:
+      meta_file: '**/.meta.yml'
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  version:
+    provider: mike
+    default: latest
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/llcuda/llcuda
+      name: GitHub - llcuda/llcuda
+    - icon: fontawesome/brands/github
+      link: https://github.com/waqasm86
+      name: GitHub - waqasm86
+    - icon: fontawesome/solid/envelope
+      link: mailto:waqasm86@gmail.com
+      name: Email - waqasm86@gmail.com
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve by
+            <a href="https://github.com/llcuda/llcuda/issues/new" target="_blank" rel="noopener">opening an issue</a>.
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/schema.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Quick Start: guides/quickstart.md
+      - Installation: guides/installation.md
+      - First Steps: guides/first-steps.md
+      - Kaggle Setup: guides/kaggle-setup.md
+  - Kaggle Dual T4:
+      - Overview: kaggle/overview.md
+      - Dual GPU Setup: kaggle/dual-gpu-setup.md
+      - Multi-GPU Inference: kaggle/multi-gpu-inference.md
+      - Tensor Split Configuration: kaggle/tensor-split.md
+      - Large Models (70B): kaggle/large-models.md
+  - Tutorials:
+      - Notebook Index: tutorials/index.md
+      - 01 - Quick Start: tutorials/01-quickstart.md
+      - 02 - Server Setup: tutorials/02-server-setup.md
+      - 03 - Multi-GPU: tutorials/03-multi-gpu.md
+      - 04 - GGUF Quantization: tutorials/04-gguf-quantization.md
+      - 05 - Unsloth Integration: tutorials/05-unsloth-integration.md
+      - 06 - Split-GPU + Graphistry: tutorials/06-split-gpu-graphistry.md
+      - 07 - OpenAI API: tutorials/07-openai-api.md
+      - 08 - NCCL + PyTorch: tutorials/08-nccl-pytorch.md
+      - 09 - Large Models: tutorials/09-large-models.md
+      - 10 - Complete Workflow: tutorials/10-complete-workflow.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Split-GPU Design: architecture/split-gpu.md
+      - GPU0 - LLM Inference: architecture/gpu0-llm.md
+      - GPU1 - Graphistry: architecture/gpu1-graphistry.md
+      - Tensor Split vs NCCL: architecture/tensor-split-vs-nccl.md
+  - API Reference:
+      - Overview: api/overview.md
+      - LlamaCppClient: api/client.md
+      - Multi-GPU Config: api/multigpu.md
+      - GGUF Tools: api/gguf.md
+      - NCCL Integration: api/nccl.md
+      - Server Manager: api/server.md
+      - Graphistry Integration: api/graphistry.md
+      - Models & Loading: api/models.md
+      - Examples: api/examples.md
+  - Unsloth Integration:
+      - Overview: unsloth/overview.md
+      - Fine-Tuning Workflow: unsloth/fine-tuning.md
+      - GGUF Export: unsloth/gguf-export.md
+      - Deployment Pipeline: unsloth/deployment.md
+      - Best Practices: unsloth/best-practices.md
+  - Graphistry & Visualization:
+      - Overview: graphistry/overview.md
+      - Knowledge Graph Extraction: graphistry/knowledge-graphs.md
+      - RAPIDS Integration: graphistry/rapids.md
+      - Split-GPU Architecture: graphistry/split-gpu-setup.md
+      - Visualization Examples: graphistry/examples.md
+  - Performance:
+      - Benchmarks: performance/benchmarks.md
+      - Dual T4 Results: performance/dual-t4-results.md
+      - Optimization Guide: performance/optimization.md
+      - Memory Management: performance/memory.md
+      - FlashAttention: performance/flash-attention.md
+  - GGUF & Quantization:
+      - GGUF Format Overview: gguf/overview.md
+      - K-Quants Guide: gguf/k-quants.md
+      - I-Quants Guide: gguf/i-quants.md
+      - Quantization Selection: gguf/selection.md
+      - VRAM Estimation: gguf/vram-estimation.md
+  - Guides:
+      - Model Selection: guides/model-selection.md
+      - Troubleshooting: guides/troubleshooting.md
+      - FAQ: guides/faq.md
+      - Build from Source: guides/build-from-source.md
+  - Links:
+      - GitHub Repository: https://github.com/llcuda/llcuda
+      - GitHub Releases: https://github.com/llcuda/llcuda/releases
+      - v2.2.0 Release: https://github.com/llcuda/llcuda/releases/tag/v2.2.0
+      - Issues & Support: https://github.com/llcuda/llcuda/issues
+      - Changelog: https://github.com/llcuda/llcuda/blob/main/CHANGELOG.md

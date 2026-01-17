@@ -1,0 +1,163 @@
+# llcuda - Tesla T4 CUDA Inference Engine
+
+> llcuda v2.1.0: High-performance GPU-accelerated LLM inference engine optimized for NVIDIA Tesla T4. Delivers 134 tok/s on Gemma 3-1B with FlashAttention, Tensor Cores, and CUDA 12.x. Distributed via GitHub with automatic binary downloads.
+
+## About llcuda
+
+llcuda is a Python library providing CUDA-accelerated inference for large language models (LLMs) optimized specifically for NVIDIA Tesla T4 GPUs (SM 7.5). It delivers verified 134 tokens/sec performance on Gemma 3-1B through FlashAttention v2, Tensor Core optimization, and CUDA 12 binaries built specifically for Tesla T4 hardware.
+
+Key Features:
+- 🚀 **134 tokens/sec** verified performance on Gemma 3-1B Q4_K_M (Tesla T4)
+- 🔥 FlashAttention v2 with 2-3x speedup for attention operations
+- ⚡ Tensor Core optimization for Tesla T4 (SM 7.5)
+- 🎯 GitHub-only distribution with auto-download CUDA binaries (266 MB)
+- 🔧 Simple PyTorch-style API for inference
+- 📦 GGUF format support from llama.cpp ecosystem
+- 🚀 Google Colab optimized for free Tesla T4 GPU access
+- 🔄 Seamless Unsloth integration for fine-tuning → deployment workflow
+
+## Getting Started
+
+- [Homepage](https://llcuda.github.io/): Official llcuda v2.1.0 documentation homepage
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for GitHub-only distribution
+- [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute guide to get started with llcuda
+- [GitHub Repository](https://github.com/llcuda/llcuda): Main llcuda project repository
+
+## Comprehensive Tutorials
+
+- [Gemma 3-1B Google Colab Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Complete guide with verified 134 tok/s performance on Tesla T4
+- [Gemma 3-1B Executed Results](https://llcuda.github.io/tutorials/gemma-3-1b-executed/): Real Tesla T4 execution output showing 134 tok/s verified performance
+- [Build CUDA Binaries](https://llcuda.github.io/tutorials/build-binaries/): Complete guide for building llama.cpp with CUDA 12 and FlashAttention on Tesla T4
+- [Unsloth Integration](https://llcuda.github.io/tutorials/unsloth-integration/): End-to-end workflow from fine-tuning with Unsloth to deployment with llcuda
+- [Performance Optimization](https://llcuda.github.io/tutorials/performance/): Advanced performance tuning and optimization techniques
+
+## Main Repository
+
+- [llcuda GitHub Repository](https://github.com/llcuda/llcuda): Main llcuda v2.1.0 source code and releases
+- [Binary Releases](https://github.com/llcuda/llcuda/releases/tag/v2.0.6): Pre-built CUDA 12 binaries for Tesla T4
+- [Colab Notebooks](https://github.com/llcuda/llcuda/tree/main/notebooks): Google Colab tutorials
+
+## Complete Documentation
+
+### Getting Started Guides
+- [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute setup guide for llcuda v2.1.0
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for Google Colab, local systems, and offline installation
+- [First Steps](https://llcuda.github.io/guides/first-steps/): Detailed first steps after installation including GPU verification and basic inference
+- [Troubleshooting](https://llcuda.github.io/guides/troubleshooting/): Solutions for common installation, GPU, model, and performance issues
+- [FAQ](https://llcuda.github.io/guides/faq/): Frequently asked questions about llcuda, installation, compatibility, and usage
+
+### Advanced Guides
+- [Model Selection Guide](https://llcuda.github.io/guides/model-selection/): How to choose the right model size and quantization for Tesla T4
+- [GGUF Format Guide](https://llcuda.github.io/guides/gguf-format/): Complete guide to GGUF format, quantization types, and model conversion
+
+### API Reference
+- [API Overview](https://llcuda.github.io/api/overview/): Complete API documentation overview
+- [InferenceEngine API](https://llcuda.github.io/api/inference-engine/): Detailed InferenceEngine class documentation with all methods and parameters
+- [Device Management API](https://llcuda.github.io/api/device/): GPU device management, CUDA properties, and memory operations
+- [Code Examples](https://llcuda.github.io/api/examples/): Complete working examples for chat, batch processing, streaming, and more
+
+### Performance Documentation
+- [Performance Benchmarks](https://llcuda.github.io/performance/benchmarks/): Comprehensive benchmarks for Gemma 3-1B, Llama 3.2-3B, Qwen 2.5-7B, and Llama 3.1-8B
+- [Tesla T4 Results](https://llcuda.github.io/performance/t4-results/): Detailed analysis of verified 134 tok/s Tesla T4 performance
+- [Performance Optimization](https://llcuda.github.io/performance/optimization/): Advanced optimization techniques for maximizing throughput and minimizing latency
+
+## GitHub Repository
+
+- [llcuda Source Code](https://github.com/llcuda/llcuda): Main project repository
+- [GitHub Releases](https://github.com/llcuda/llcuda/releases): Download CUDA binaries and releases
+- [Colab Notebooks](https://github.com/llcuda/llcuda/tree/main/notebooks): Interactive tutorials
+
+## Installation
+
+GitHub-only distribution (v2.0.6):
+
+```bash
+pip install git+https://github.com/llcuda/llcuda.git
+```
+
+Binary auto-download: 266 MB CUDA binaries download automatically from GitHub Releases on first import.
+
+## Key Features
+
+- **134 tok/s verified performance** on Tesla T4 with Gemma 3-1B Q4_K_M
+- FlashAttention v2 optimization for 2-3x speedup
+- Tensor Core support (SM 7.5) for Tesla T4
+- Automatic binary download (266 MB CUDA binaries)
+- GGUF format support from llama.cpp ecosystem
+- PyTorch-style API for easy integration
+- Google Colab optimized
+
+## Documentation Structure
+
+- [Home](https://llcuda.github.io/): Main homepage with overview
+- [Quick Start](https://llcuda.github.io/guides/quickstart/): 5-minute setup guide
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions
+- [Gemma 3-1B Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Google Colab tutorial with Tesla T4
+- [API Overview](https://llcuda.github.io/api/overview/): Complete API documentation
+
+## Key Information
+
+**llcuda v2.1.0** is a Tesla T4 optimized CUDA inference backend for LLMs:
+
+- **Distribution**: GitHub-only (no PyPI), install via `pip install git+https://github.com/llcuda/llcuda.git`
+- **Binary Auto-Download**: 266 MB CUDA binaries from GitHub Releases
+- **Target GPU**: Tesla T4 (Google Colab, Kaggle, cloud instances)
+- **Verified Performance**: 134 tokens/sec on Gemma 3-1B Q4_K_M
+- **CUDA Version**: CUDA 12.x runtime
+- **Optimizations**: FlashAttention v2, Tensor Cores (SM 7.5)
+- **Distribution**: GitHub-only (no PyPI)
+- **Format**: GGUF models from llama.cpp ecosystem
+
+Remember:
+- llcuda v2.1.0 is exclusively for Tesla T4 GPUs with CUDA 12
+- Install via: pip install git+https://github.com/llcuda/llcuda.git
+- Binaries auto-download on first import (266 MB from GitHub Releases)
+- Verified performance: 134 tokens/sec on Gemma 3-1B Q4_K_M
+- Optimized for Google Colab Tesla T4 GPUs
+- FlashAttention v2 + Tensor Cores deliver 3x faster performance
+
+## Documentation
+
+- [Installation Guide](https://llcuda.github.io/guides/installation/): Complete installation instructions for GitHub, wheel, and source installations
+- [Quick Start Guide](https://llcuda.github.io/guides/quickstart/): 5-minute quick start tutorial with working examples
+- [Gemma 3-1B Tutorial](https://llcuda.github.io/tutorials/gemma-3-1b-colab/): Complete Google Colab tutorial with verified 134 tok/s performance
+- [API Overview](https://llcuda.github.io/api/overview/): Complete API reference for InferenceEngine
+
+## Main Repository
+
+- [llcuda GitHub](https://github.com/llcuda/llcuda): Main project repository
+- [Installation](https://llcuda.github.io/guides/installation/): Complete installation guide
+- [Quick Start](https://llcuda.github.io/guides/quickstart/): 5-minute quick start guide
+
+## Google Colab Notebooks
+
+llcuda includes 8 comprehensive Jupyter notebooks optimized for Tesla T4 GPUs on Google Colab:
+
+### Featured Notebooks
+- [Gemma 3-1B Tutorial (Recommended)](https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab.ipynb): Complete guide demonstrating 134 tok/s verified performance
+- [Gemma 3-1B Executed](https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_v2_0_6_gemma3_1b_unsloth_colab_executed.ipynb): Live execution output from Tesla T4
+- [Build Binaries on T4](https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/build_llcuda_v2_t4_colab.ipynb): Build CUDA 12 binaries from source
+- [Unsloth Complete Build](https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_unsloth_t4_complete_build.ipynb): Full build workflow
+- [Unsloth Tutorial](https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_unsloth_tutorial.ipynb): Unsloth integration examples
+- [Quickstart Tutorial](https://colab.research.google.com/github/llcuda/llcuda/blob/main/notebooks/llcuda_quickstart_tutorial.ipynb): 5-minute introduction
+
+### Notebook Documentation
+- [Notebooks Index](https://llcuda.github.io/notebooks/): Complete overview of all available notebooks
+- [Colab Usage Guide](https://llcuda.github.io/notebooks/colab/): How to use llcuda on Google Colab effectively
+
+## Performance Data
+
+- Verified Tesla T4 Performance: 134 tokens/sec with Gemma 3-1B Q4_K_M
+- 3x faster than initial estimates
+- Median latency: 690ms
+- Full GPU offload: 99 layers on Tesla T4
+
+## Key Features
+
+- FlashAttention v2 (2-3x speedup)
+- Tensor Core optimization (SM 7.5)
+- CUDA Graphs for reduced overhead
+- Automatic binary download from GitHub Releases
+- PyTorch-style API for LLM inference
+- GGUF format support
+- Unsloth integration for fine-tuning workflow

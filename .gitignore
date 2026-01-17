@@ -1,0 +1,62 @@
+# MkDocs Build Output
+site/
+.cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local development
+.env
+
+# Large files (do not commit)
+*.tar.gz
+*.zip
+*.gguf
+*.bin
+*.safetensors
+*.pth
+*.pt
+
+# Temporary files
+*.log
+*.tmp
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation build artifacts
+docs/.buildinfo
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Old versions (archive)
+archive/
+DEPLOYMENT_COMPLETE_v2.1.0.md
+SEO_IMPROVEMENTS.md
+SETUP_SHORT_URL.md
+SITEMAP_FIX_*.md
+GOOGLE_SEARCH_CONSOLE_STEPS.md
+QUICK_START_GUIDE.md
+WEBSITE_STATUS.md
