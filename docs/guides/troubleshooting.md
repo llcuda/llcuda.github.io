@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-Solutions to common issues with llcuda v2.1.0 on Tesla T4 GPUs.
+Solutions to common issues with llcuda v2.2.0 on Tesla T4 GPUs.
 
 ## Installation Issues
 
@@ -13,11 +13,11 @@ ERROR: Could not find a version that satisfies the requirement llcuda
 
 **Solution:**
 ```bash
-# Install from GitHub (not PyPI for v2.1.0)
+# Install from GitHub (not PyPI for v2.2.0)
 pip install git+https://github.com/llcuda/llcuda.git
 
 # Or use specific release
-pip install https://github.com/llcuda/llcuda/releases/download/v2.1.0/llcuda-2.1.0-py3-none-any.whl
+pip install https://github.com/llcuda/llcuda/releases/download/v2.2.0/llcuda-2.2.0-py3-none-any.whl
 ```
 
 ### Binary download fails
@@ -34,7 +34,7 @@ import requests
 import tarfile
 from pathlib import Path
 
-url = "https://github.com/llcuda/llcuda/releases/download/v2.0.6/llcuda-binaries-cuda12-t4-v2.0.6.tar.gz"
+url = "https://github.com/llcuda/llcuda/releases/download/v2.2.0/llcuda-v2.2.0-cuda12-kaggle-t4x2.tar.gz"
 cache_dir = Path.home() / ".cache" / "llcuda"
 cache_dir.mkdir(parents=True, exist_ok=True)
 
@@ -63,8 +63,8 @@ No CUDA GPU detected
 # Check NVIDIA driver
 nvidia-smi
 
-# If fails in Colab, verify runtime type
-# Runtime > Change runtime type > GPU > T4
+# If fails in Kaggle, verify accelerator type
+# Settings > Accelerator > GPU T4 x 2
 
 # Verify CUDA version
 nvcc --version  # Should show CUDA 12.x
@@ -79,10 +79,7 @@ GPU: Tesla P100 (SM 6.0)
 ```
 
 **Solution:**
-llcuda v2.1.0 is Tesla T4-only. For other GPUs, use v1.2.2:
-```bash
-pip install llcuda==1.2.2
-```
+llcuda v2.2.0 is optimized for Kaggle dual Tesla T4. For other GPUs, compatibility may vary.
 
 ## Model Loading Issues
 
@@ -240,22 +237,22 @@ nvcc --version
 nvidia-smi  # Look for "CUDA Version"
 
 # llcuda requires CUDA 12.0+
-# Google Colab has CUDA 12.2+ by default
+# Kaggle has CUDA 12.2+ by default
 ```
 
-## Google Colab Specific
+## Kaggle Specific
 
-### T4 not available
-
-**Solution:**
-- In Colab: Runtime > Change runtime type > GPU > T4
-- Free tier: T4 not always available, try later or use Colab Pro
-- Pro tier: T4 guaranteed
-
-### Runtime disconnects
+### T4 GPUs not available
 
 **Solution:**
-Keep connection alive with periodic activity or use Colab Pro for longer runtimes.
+- In Kaggle: Settings > Accelerator > GPU T4 x 2
+- Enable Internet access: Settings > Internet > On
+- Dual T4 GPUs are always available on Kaggle (free tier)
+
+### Session disconnects after 12 hours
+
+**Solution:**
+Kaggle has a 12-hour maximum session limit. Save your work to `/kaggle/working` which persists between sessions.
 
 ## Debug Mode
 

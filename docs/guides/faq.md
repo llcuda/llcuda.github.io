@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-Common questions and answers about llcuda v2.1.0.
+Common questions and answers about llcuda v2.2.0.
 
 ## General Questions
 
@@ -16,11 +16,11 @@ llcuda is a Python library for fast LLM inference on NVIDIA GPUs, specifically o
 
 ### Why Tesla T4 only?
 
-llcuda v2.1.0 is optimized exclusively for Tesla T4 (compute capability 7.5) to maximize performance:
+llcuda v2.2.0 is optimized exclusively for Tesla T4 (compute capability 7.5) to maximize performance:
 
 - Tensor Core optimizations for SM 7.5
 - FlashAttention tuned for Turing architecture
-- Binary size reduction (266 MB vs 500+ MB for multi-GPU)
+- Multi-GPU support for dual T4 setups (Kaggle)
 - Guaranteed compatibility
 
 For other GPUs, use llcuda v1.2.2 which supports SM 5.0-8.9.
@@ -29,7 +29,7 @@ For other GPUs, use llcuda v1.2.2 which supports SM 5.0-8.9.
 
 | Solution | Speed (Gemma 3-1B) | Setup | Ease of Use |
 |----------|---------|-------|-------------|
-| **llcuda v2.1.0** | **134 tok/s** | 1 min | Excellent |
+| **llcuda v2.2.0** | **134 tok/s** | 1 min | Excellent |
 | transformers | 45 tok/s | 5 min | Good |
 | vLLM | 85 tok/s | 10 min | Moderate |
 | llama.cpp CLI | 128 tok/s | 15 min | Moderate |
@@ -44,32 +44,32 @@ llcuda is 3x faster than PyTorch and easiest to set up.
 pip install git+https://github.com/llcuda/llcuda.git
 ```
 
-Binaries auto-download on first import (~266 MB).
+Binaries auto-download on first import (~961 MB).
 
 ### Do I need to install CUDA Toolkit?
 
 No! llcuda includes all necessary CUDA binaries. You only need:
 
-- NVIDIA driver (pre-installed in Google Colab)
-- CUDA runtime (pre-installed in Colab)
+- NVIDIA driver (pre-installed in Kaggle)
+- CUDA runtime (pre-installed in Kaggle)
 - Python 3.11+
 
 ### Can I install from PyPI?
 
-llcuda v2.1.0 is GitHub-only for now. Use:
+llcuda v2.2.0 is GitHub-only for now. Use:
 ```bash
 pip install git+https://github.com/llcuda/llcuda.git
 ```
 
 ### Why do binaries download on first import?
 
-To keep the pip package small (~62 KB), CUDA binaries (266 MB) download automatically on first import from GitHub Releases. This is a one-time download, then cached locally.
+To keep the pip package small (~62 KB), CUDA binaries (961 MB) download automatically on first import from GitHub Releases. This is a one-time download, then cached locally.
 
 ## Compatibility
 
 ### Which GPUs are supported?
 
-llcuda v2.1.0: **Tesla T4 only** (SM 7.5)
+llcuda v2.2.0: **Tesla T4 only** (SM 7.5, single or dual GPU)
 
 llcuda v1.2.2: All GPUs with SM 5.0+ (Maxwell through Ada Lovelace)
 
@@ -79,7 +79,7 @@ Yes, but not recommended. Set `gpu_layers=0` for CPU mode. Performance drops fro
 
 ### Does llcuda work on Windows?
 
-llcuda v2.1.0 is Linux-only (Google Colab, Ubuntu). For Windows, compile from source or use WSL2.
+llcuda v2.2.0 is Linux-only (Kaggle, Ubuntu). For Windows, compile from source or use WSL2.
 
 ### What Python versions are supported?
 
@@ -289,50 +289,51 @@ result = engine.infer(
 )
 ```
 
-## Google Colab
+## Kaggle Notebooks
 
-### Does llcuda work in Google Colab?
+### Does llcuda work on Kaggle?
 
-Yes! llcuda is optimized for Colab T4:
+Yes! llcuda v2.2.0 is optimized for Kaggle's dual T4 GPUs:
 
 ```python
-# In Colab
+# In Kaggle notebook
 !pip install git+https://github.com/llcuda/llcuda.git
 
-import llcuda
-engine = llcuda.InferenceEngine()
-engine.load_model("gemma-3-1b-Q4_K_M", auto_start=True)
+from llcuda.server import ServerManager, ServerConfig
+
+config = ServerConfig(
+    model_path="gemma-3-1b-Q4_K_M.gguf",
+    tensor_split="0.5,0.5"  # Use both T4 GPUs
+)
+server = ServerManager()
+server.start_with_config(config)
 ```
 
-### How do I get T4 in Colab?
+### How do I enable dual T4 GPUs in Kaggle?
 
-Runtime > Change runtime type > Hardware accelerator > GPU > GPU type > T4
+Settings → Accelerator → GPU T4 x 2 → Internet → On
 
-### Do I need Colab Pro?
+### What are the Kaggle session limits?
 
-No, but Colab Pro provides:
+Kaggle provides:
 
-- Guaranteed T4 access
-- Longer runtime (24h vs 12h)
-- More RAM
-- Priority execution
-
-Free tier works but T4 availability varies.
+- Dual Tesla T4 GPUs (15GB each = 30GB total)
+- 12-hour session limit
+- 73GB disk space
+- Free internet access
 
 ### Can I save models between sessions?
 
-Models cache to `~/.cache/llcuda/`. In Colab, this resets. Use:
+Models cache to `/tmp/`. In Kaggle, only `/kaggle/working` persists between runs. Use:
 
 ```python
-# Save to Google Drive
-from google.colab import drive
-drive.mount('/content/drive')
+# Save to working directory
+!mkdir -p /kaggle/working/models
+!cp ~/.cache/llcuda/models/*.gguf /kaggle/working/models/
 
-# Copy model
-!cp ~/.cache/llcuda/models/gemma-3-1b*.gguf /content/drive/MyDrive/
-
-# Next session: load from Drive
-engine.load_model("/content/drive/MyDrive/gemma-3-1b-Q4_K_M.gguf")
+# Next session: load from working directory
+from llcuda.server import ServerConfig
+config = ServerConfig(model_path="/kaggle/working/models/model.gguf")
 ```
 
 ## Troubleshooting

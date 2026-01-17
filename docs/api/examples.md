@@ -698,5 +698,5 @@ if __name__ == "__main__":
 - [API Overview](overview.md) - Complete API reference
 - [InferenceEngine](inference-engine.md) - Detailed engine documentation
 - [Quick Start](../guides/quickstart.md) - Getting started guide
-- [Tutorials](../tutorials/gemma-3-1b-colab.md) - Step-by-step tutorials
+- [Tutorials](../tutorials/index.md) - Step-by-step tutorials
 - [Performance](../performance/benchmarks.md) - Benchmark results

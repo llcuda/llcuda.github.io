@@ -1,6 +1,6 @@
 # API Reference Overview
 
-Complete API documentation for llcuda v2.1.0.
+Complete API documentation for llcuda v2.2.0.
 
 ## :material-puzzle: Main Components
 
@@ -123,7 +123,7 @@ Check if current GPU is compatible with llcuda.
     'gpu_name': str,          # e.g., "Tesla T4"
     'compute_capability': str, # e.g., "7.5"
     'compatible': bool,       # True if supported
-    'platform': str          # e.g., "colab", "local"
+    'platform': str          # e.g., "kaggle", "local"
 }
 ```
 
@@ -146,5 +146,5 @@ else:
 ## :link: See Also
 
 - [Quick Start Guide](../guides/quickstart.md)
-- [Tutorials](../tutorials/gemma-3-1b-colab.md)
+- [Tutorials](../tutorials/index.md)
 - [Performance Benchmarks](../performance/benchmarks.md)
