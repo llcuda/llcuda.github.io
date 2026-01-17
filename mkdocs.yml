@@ -36,29 +36,22 @@ theme:
     text: Roboto
     code: Roboto Mono
   features:
-    - announce.dismiss
     - content.code.annotate
     - content.code.copy
+    - content.footnote.tooltips
     - content.tabs.link
     - content.tooltips
-    - header.autohide
-    - navigation.expand
     - navigation.footer
     - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.path
-    - navigation.sections
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    - toc.integrate
 
 plugins:
   - search:
@@ -163,78 +156,73 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
-  - Home: index.md
-  - Getting Started:
-      - Quick Start: guides/quickstart.md
-      - Installation: guides/installation.md
-      - First Steps: guides/first-steps.md
-      - Kaggle Setup: guides/kaggle-setup.md
-  - Kaggle Dual T4:
-      - Overview: kaggle/overview.md
-      - Dual GPU Setup: kaggle/dual-gpu-setup.md
-      - Multi-GPU Inference: kaggle/multi-gpu-inference.md
-      - Tensor Split Configuration: kaggle/tensor-split.md
-      - Large Models (70B): kaggle/large-models.md
-  - Tutorials:
-      - Notebook Index: tutorials/index.md
-      - 01 - Quick Start: tutorials/01-quickstart.md
-      - 02 - Server Setup: tutorials/02-server-setup.md
-      - 03 - Multi-GPU: tutorials/03-multi-gpu.md
-      - 04 - GGUF Quantization: tutorials/04-gguf-quantization.md
-      - 05 - Unsloth Integration: tutorials/05-unsloth-integration.md
-      - 06 - Split-GPU + Graphistry: tutorials/06-split-gpu-graphistry.md
-      - 07 - OpenAI API: tutorials/07-openai-api.md
-      - 08 - NCCL + PyTorch: tutorials/08-nccl-pytorch.md
-      - 09 - Large Models: tutorials/09-large-models.md
-      - 10 - Complete Workflow: tutorials/10-complete-workflow.md
-  - Architecture:
-      - Overview: architecture/overview.md
-      - Split-GPU Design: architecture/split-gpu.md
-      - GPU0 - LLM Inference: architecture/gpu0-llm.md
-      - GPU1 - Graphistry: architecture/gpu1-graphistry.md
-      - Tensor Split vs NCCL: architecture/tensor-split-vs-nccl.md
+  - llcuda v2.2.0: index.md
+  - Learn:
+      - Getting Started:
+          - Quick Start: guides/quickstart.md
+          - Installation: guides/installation.md
+          - First Steps: guides/first-steps.md
+          - Kaggle Setup: guides/kaggle-setup.md
+      - Kaggle Dual T4:
+          - kaggle/overview.md
+          - kaggle/dual-gpu-setup.md
+          - kaggle/multi-gpu-inference.md
+          - kaggle/tensor-split.md
+          - kaggle/large-models.md
+      - Tutorial Notebooks:
+          - tutorials/index.md
+          - tutorials/01-quickstart.md
+          - tutorials/02-server-setup.md
+          - tutorials/03-multi-gpu.md
+          - tutorials/04-gguf-quantization.md
+          - tutorials/05-unsloth-integration.md
+          - tutorials/06-split-gpu-graphistry.md
+          - tutorials/07-openai-api.md
+          - tutorials/08-nccl-pytorch.md
+          - tutorials/09-large-models.md
+          - tutorials/10-complete-workflow.md
+      - Architecture:
+          - architecture/overview.md
+          - architecture/split-gpu.md
+          - architecture/gpu0-llm.md
+          - architecture/gpu1-graphistry.md
+          - architecture/tensor-split-vs-nccl.md
+      - Unsloth Integration:
+          - unsloth/overview.md
+          - unsloth/fine-tuning.md
+          - unsloth/gguf-export.md
+          - unsloth/deployment.md
+          - unsloth/best-practices.md
+      - Graphistry & Visualization:
+          - graphistry/overview.md
+          - graphistry/knowledge-graphs.md
+          - graphistry/rapids.md
+          - graphistry/split-gpu-setup.md
+          - graphistry/examples.md
+      - Performance:
+          - performance/benchmarks.md
+          - performance/dual-t4-results.md
+          - performance/optimization.md
+          - performance/memory.md
+          - performance/flash-attention.md
+      - GGUF & Quantization:
+          - gguf/overview.md
+          - gguf/k-quants.md
+          - gguf/i-quants.md
+          - gguf/selection.md
+          - gguf/vram-estimation.md
+      - Guides:
+          - guides/model-selection.md
+          - guides/troubleshooting.md
+          - guides/faq.md
+          - guides/build-from-source.md
   - API Reference:
-      - Overview: api/overview.md
-      - LlamaCppClient: api/client.md
-      - Multi-GPU Config: api/multigpu.md
-      - GGUF Tools: api/gguf.md
-      - NCCL Integration: api/nccl.md
-      - Server Manager: api/server.md
-      - Graphistry Integration: api/graphistry.md
-      - Models & Loading: api/models.md
-      - Examples: api/examples.md
-  - Unsloth Integration:
-      - Overview: unsloth/overview.md
-      - Fine-Tuning Workflow: unsloth/fine-tuning.md
-      - GGUF Export: unsloth/gguf-export.md
-      - Deployment Pipeline: unsloth/deployment.md
-      - Best Practices: unsloth/best-practices.md
-  - Graphistry & Visualization:
-      - Overview: graphistry/overview.md
-      - Knowledge Graph Extraction: graphistry/knowledge-graphs.md
-      - RAPIDS Integration: graphistry/rapids.md
-      - Split-GPU Architecture: graphistry/split-gpu-setup.md
-      - Visualization Examples: graphistry/examples.md
-  - Performance:
-      - Benchmarks: performance/benchmarks.md
-      - Dual T4 Results: performance/dual-t4-results.md
-      - Optimization Guide: performance/optimization.md
-      - Memory Management: performance/memory.md
-      - FlashAttention: performance/flash-attention.md
-  - GGUF & Quantization:
-      - GGUF Format Overview: gguf/overview.md
-      - K-Quants Guide: gguf/k-quants.md
-      - I-Quants Guide: gguf/i-quants.md
-      - Quantization Selection: gguf/selection.md
-      - VRAM Estimation: gguf/vram-estimation.md
-  - Guides:
-      - Model Selection: guides/model-selection.md
-      - Troubleshooting: guides/troubleshooting.md
-      - FAQ: guides/faq.md
-      - Build from Source: guides/build-from-source.md
-  - Links:
-      - GitHub Repository: https://github.com/llcuda/llcuda
-      - GitHub Releases: https://github.com/llcuda/llcuda/releases
-      - v2.2.0 Release: https://github.com/llcuda/llcuda/releases/tag/v2.2.0
-      - Issues & Support: https://github.com/llcuda/llcuda/issues
-      - Changelog: https://github.com/llcuda/llcuda/blob/main/CHANGELOG.md
+      - api/overview.md
+      - api/client.md
+      - api/server.md
+      - api/multigpu.md
+      - api/gguf.md
+      - api/nccl.md
+      - api/graphistry.md
+      - api/models.md
+      - api/examples.md

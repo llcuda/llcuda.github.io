@@ -32,53 +32,41 @@ Fine-tune with Unsloth → Export to GGUF → Deploy on Kaggle → Visualize wit
 
 llcuda is a **CUDA 12 inference backend** specifically designed for deploying [Unsloth](https://unsloth.ai/)-fine-tuned models on **Kaggle's dual Tesla T4 GPUs** (30GB total VRAM). It provides:
 
-<div class="grid cards" markdown>
+### :material-gpu: Dual T4 Architecture
 
--   :material-gpu: **Dual T4 Architecture**
+Run on Kaggle's **2× Tesla T4 GPUs** (15GB each)
 
-    ---
+- Native CUDA tensor-split for multi-GPU
+- Support for 70B models with IQ3_XS quantization
+- FlashAttention for 2-3x faster inference
+- 961MB pre-built CUDA 12.5 binaries
 
-    Run on Kaggle's **2× Tesla T4 GPUs** (15GB each)
+### :material-account-network: Split-GPU Design
 
-    - Native CUDA tensor-split for multi-GPU
-    - Support for 70B models with IQ3_XS quantization
-    - FlashAttention for 2-3x faster inference
-    - 961MB pre-built CUDA 12.5 binaries
+Unique architecture: **LLM on GPU 0 + Graphistry on GPU 1**
 
--   :material-account-network: **Split-GPU Design**
+- GPU 0: llama.cpp server for LLM inference
+- GPU 1: RAPIDS cuGraph + Graphistry visualization
+- Extract knowledge graphs from LLM outputs
+- Visualize millions of nodes and edges
 
-    ---
+### :material-lightning-bolt: Unsloth Integration
 
-    Unique architecture: **LLM on GPU 0 + Graphistry on GPU 1**
+Seamless workflow from training to deployment
 
-    - GPU 0: llama.cpp server for LLM inference
-    - GPU 1: RAPIDS cuGraph + Graphistry visualization
-    - Extract knowledge graphs from LLM outputs
-    - Visualize millions of nodes and edges
+- Fine-tune with Unsloth (2x faster training)
+- Export to GGUF format with `save_pretrained_gguf()`
+- Deploy with llcuda on Kaggle
+- Complete end-to-end pipeline
 
--   :material-lightning-bolt: **Unsloth Integration**
+### :material-chart-line: Production Ready
 
-    ---
+Built for Kaggle production workloads
 
-    Seamless workflow from training to deployment
-
-    - Fine-tune with Unsloth (2x faster training)
-    - Export to GGUF format with `save_pretrained_gguf()`
-    - Deploy with llcuda on Kaggle
-    - Complete end-to-end pipeline
-
--   :material-chart-line: **Production Ready**
-
-    ---
-
-    Built for Kaggle production workloads
-
-    - OpenAI-compatible API via llama-server
-    - 29 quantization formats (K-quants, I-quants)
-    - NCCL support for PyTorch distributed
-    - Auto-download binaries from GitHub Releases
-
-</div>
+- OpenAI-compatible API via llama-server
+- 29 quantization formats (K-quants, I-quants)
+- NCCL support for PyTorch distributed
+- Auto-download binaries from GitHub Releases
 
 ---
 

@@ -3,6 +3,18 @@
 :root {
   --md-primary-fg-color: #4a5568;
   --md-accent-fg-color: #667eea;
+  /* Override Material's default code font */
+  --md-code-font: "Roboto Mono", monospace;
+}
+
+/* Ensure content uses full width */
+.md-content {
+  max-width: 100%;
+}
+
+.md-content__inner {
+  margin: 0 auto;
+  padding: 0 0.8rem;
 }
 
 /* Kaggle badge styling */
@@ -20,11 +32,6 @@ table {
 /* Code blocks */
 .highlight {
   margin: 1em 0;
-}
-
-/* Grid cards spacing */
-.grid.cards {
-  margin: 2em 0;
 }
 
 /* Admonition custom colors */
@@ -45,4 +52,10 @@ table {
 .md-button--primary:hover {
   background-color: #5568d3;
   border-color: #5568d3;
+}
+
+/* Right to left language support for code */
+code {
+  direction: ltr;
+  display: inline-block;
 }
