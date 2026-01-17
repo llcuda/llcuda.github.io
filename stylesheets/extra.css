@@ -7,14 +7,58 @@
   --md-code-font: "Roboto Mono", monospace;
 }
 
-/* Ensure content uses full width */
+/* Reduce margins and increase content width */
 .md-content {
   max-width: 100%;
 }
 
 .md-content__inner {
   margin: 0 auto;
-  padding: 0 0.8rem;
+  padding: 0 0.4rem;
+  max-width: none;
+}
+
+/* Increase main content area width */
+.md-grid {
+  max-width: 90rem;
+}
+
+/* Reduce sidebar margins */
+.md-sidebar--primary {
+  left: 0;
+}
+
+.md-sidebar--secondary {
+  right: 0;
+}
+
+/* Optimize content typography spacing */
+.md-typeset {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.md-typeset h1 {
+  margin: 0 0 1.25rem;
+}
+
+.md-typeset h2 {
+  margin: 1.6rem 0 0.8rem;
+}
+
+.md-typeset h3 {
+  margin: 1.4rem 0 0.8rem;
+}
+
+/* Wider content on larger screens */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 12rem;
+  }
+
+  .md-sidebar--secondary {
+    width: 14rem;
+  }
 }
 
 /* Kaggle badge styling */
