@@ -75,41 +75,52 @@ Built for Kaggle production workloads
 llcuda v2.2.0 implements a unique **split-GPU architecture** for Kaggle's dual T4 environment:
 
 ```mermaid
-graph LR
+%%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
+graph TD
     A[Unsloth Fine-Tuning] --> B[GGUF Export]
     B --> C[llcuda Deployment]
     C --> D[GPU 0: LLM Inference]
-    C --> E[GPU 1: Graphistry Viz]
+    C --> E[GPU 1: Graphistry Visualization]
     D --> F[Knowledge Extraction]
     F --> E
-    E --> G[Graph Visualization]
+    E --> G[Interactive Graph Visualization]
 
-    style D fill:#4CAF50
-    style E fill:#2196F3
-    style C fill:#FF9800
+    style A fill:#9C27B0,stroke:#7B1FA2,stroke-width:3px,color:#fff
+    style B fill:#FF9800,stroke:#F57C00,stroke-width:3px,color:#fff
+    style C fill:#FF5722,stroke:#E64A19,stroke-width:3px,color:#fff
+    style D fill:#4CAF50,stroke:#388E3C,stroke-width:3px,color:#fff
+    style E fill:#2196F3,stroke:#1976D2,stroke-width:3px,color:#fff
+    style F fill:#00BCD4,stroke:#0097A7,stroke-width:3px,color:#fff
+    style G fill:#03A9F4,stroke:#0288D1,stroke-width:3px,color:#fff
+
+    classDef default font-size:16px,padding:15px
 ```
 
 ### Split-GPU Configuration
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│              KAGGLE DUAL T4 SPLIT-GPU ARCHITECTURE             │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   GPU 0: Tesla T4 (15GB)          GPU 1: Tesla T4 (15GB)       │
-│   ┌─────────────────────┐         ┌─────────────────────┐     │
-│   │  llama-server       │         │  RAPIDS cuDF        │     │
-│   │  GGUF Model         │ ───────>│  cuGraph            │     │
-│   │  LLM Inference      │  extract │  Graphistry[ai]     │     │
-│   │  ~5-12GB VRAM       │  graphs  │  Network Viz        │     │
-│   └─────────────────────┘         └─────────────────────┘     │
-│                                                                 │
-│   • tensor-split for multi-GPU   • Millions of nodes/edges    │
-│   • FlashAttention enabled       • GPU-accelerated rendering  │
-│   • OpenAI API compatible        • Interactive exploration    │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+<div style="font-family: monospace; background: #f5f5f5; padding: 1.5em; border-radius: 8px; font-size: 0.95em; line-height: 1.8;">
+<pre style="margin: 0;">
+┌──────────────────────────────────────────────────────────────────────────┐
+│                   KAGGLE DUAL T4 SPLIT-GPU ARCHITECTURE                  │
+├──────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│    GPU 0: Tesla T4 (15GB)                  GPU 1: Tesla T4 (15GB)       │
+│    ┌────────────────────────┐              ┌────────────────────────┐   │
+│    │                        │              │                        │   │
+│    │   llama-server         │              │   RAPIDS cuDF          │   │
+│    │   GGUF Model           │  ─────────>  │   cuGraph              │   │
+│    │   LLM Inference        │   extract    │   Graphistry[ai]       │   │
+│    │   ~5-12GB VRAM         │   graphs     │   Network Viz          │   │
+│    │                        │              │                        │   │
+│    └────────────────────────┘              └────────────────────────┘   │
+│                                                                          │
+│    • tensor-split for multi-GPU          • Millions of nodes/edges      │
+│    • FlashAttention enabled              • GPU-accelerated rendering    │
+│    • OpenAI API compatible               • Interactive exploration      │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+</pre>
+</div>
 
 ---
 
@@ -204,7 +215,7 @@ print(config.to_cli_args())
 | 32-34B | Q4_K_M | 20-22 GB | ✅ Dual T4 |
 | **70B** | **IQ3_XS** | **25-27 GB** | ✅ **Dual T4** |
 
-[:material-gpu: Multi-GPU Guide](kaggle/multi-gpu-inference.md){ .md-button }
+[:material-gpu: Multi-GPU Guide](kaggle/multi-gpu-inference.md){ .md-button .md-button--primary }
 
 ---
 
