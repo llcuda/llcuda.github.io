@@ -74,6 +74,8 @@ Built for Kaggle production workloads
 
 llcuda v2.2.0 implements a unique **split-GPU architecture** for Kaggle's dual T4 environment:
 
+<div style="text-align: center;">
+
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
@@ -96,29 +98,31 @@ graph TD
     classDef default font-size:16px,padding:15px
 ```
 
+</div>
+
 ### Split-GPU Configuration
 
 <div style="font-family: monospace; background: #f5f5f5; padding: 1.5em; border-radius: 8px; font-size: 0.95em; line-height: 1.8;">
 <pre style="margin: 0;">
-┌──────────────────────────────────────────────────────────────────────────┐
-│                   KAGGLE DUAL T4 SPLIT-GPU ARCHITECTURE                  │
-├──────────────────────────────────────────────────────────────────────────┤
-│                                                                          │
-│    GPU 0: Tesla T4 (15GB)                  GPU 1: Tesla T4 (15GB)       │
-│    ┌────────────────────────┐              ┌────────────────────────┐   │
-│    │                        │              │                        │   │
-│    │   llama-server         │              │   RAPIDS cuDF          │   │
-│    │   GGUF Model           │  ─────────>  │   cuGraph              │   │
-│    │   LLM Inference        │   extract    │   Graphistry[ai]       │   │
-│    │   ~5-12GB VRAM         │   graphs     │   Network Viz          │   │
-│    │                        │              │                        │   │
-│    └────────────────────────┘              └────────────────────────┘   │
-│                                                                          │
-│    • tensor-split for multi-GPU          • Millions of nodes/edges      │
-│    • FlashAttention enabled              • GPU-accelerated rendering    │
-│    • OpenAI API compatible               • Interactive exploration      │
-│                                                                          │
-└──────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────┐
+│                    KAGGLE DUAL T4 SPLIT-GPU ARCHITECTURE                   │
+├────────────────────────────────────────────────────────────────────────────┤
+│                                                                            │
+│     GPU 0: Tesla T4 (15GB)                  GPU 1: Tesla T4 (15GB)         │
+│     ┌────────────────────────┐              ┌────────────────────────┐     │
+│     │                        │              │                        │     │
+│     │   llama-server         │              │   RAPIDS cuDF          │     │
+│     │   GGUF Model           │  ─────────>  │   cuGraph              │     │
+│     │   LLM Inference        │   extract    │   Graphistry[ai]       │     │
+│     │   ~5-12GB VRAM         │   graphs     │   Network Viz          │     │
+│     │                        │              │                        │     │
+│     └────────────────────────┘              └────────────────────────┘     │
+│                                                                            │
+│     • tensor-split for multi-GPU          • Millions of nodes/edges        │
+│     • FlashAttention enabled              • GPU-accelerated rendering      │
+│     • OpenAI API compatible               • Interactive exploration        │
+│                                                                            │
+└────────────────────────────────────────────────────────────────────────────┘
 </pre>
 </div>
 
