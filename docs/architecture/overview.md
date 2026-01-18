@@ -6,19 +6,19 @@ llcuda v2.2.0 architecture for Kaggle dual T4.
 
 ```
 ┌─────────────────────────────────────────┐
-│         llcuda v2.2.0 Stack            │
+│         llcuda v2.2.0 Stack             │
 ├─────────────────────────────────────────┤
 │  Python API (llcuda.api.*)              │
-│  ├─ client.py (OpenAI-compatible)      │
-│  ├─ multigpu.py (Dual T4 config)       │
-│  ├─ gguf.py (Quantization tools)       │
-│  └─ nccl.py (PyTorch distributed)      │
+│  ├─ client.py (OpenAI-compatible)       │
+│  ├─ multigpu.py (Dual T4 config)        │
+│  ├─ gguf.py (Quantization tools)        │
+│  └─ nccl.py (PyTorch distributed)       │
 ├─────────────────────────────────────────┤
 │  Server Manager (llcuda.server)         │
 │  └─ Lifecycle management                │
 ├─────────────────────────────────────────┤
 │  llama.cpp Server (C++/CUDA)            │
-│  ├─ Build 7760 (commit 388ce82)        │
+│  ├─ Build 7760 (commit 388ce82)         │
 │  ├─ OpenAI API endpoints                │
 │  └─ Native CUDA tensor-split            │
 ├─────────────────────────────────────────┤
