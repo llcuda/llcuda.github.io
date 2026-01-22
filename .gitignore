@@ -37,6 +37,26 @@ Thumbs.db
 *.safetensors
 *.pth
 *.pt
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pb
+*.onnx
+*.tflite
+*.mlmodel
+
+# Large notebook outputs (> 10MB)
+*-executed.ipynb
+*-output.ipynb
+notebooks-executed/
+notebooks-local/
+
+# Large model files and datasets
+models/
+datasets/
+checkpoints/
+weights/
 
 # Temporary files
 *.log

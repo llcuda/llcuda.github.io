@@ -181,6 +181,7 @@ nav:
           - tutorials/08-nccl-pytorch.md
           - tutorials/09-large-models.md
           - tutorials/10-complete-workflow.md
+          - "⭐ 11: GGUF Neural Network Visualization": tutorials/11-gguf-neural-network-visualization.md
       - Architecture:
           - architecture/overview.md
           - architecture/split-gpu.md

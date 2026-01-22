@@ -1,6 +1,8 @@
 # Tutorial Notebooks
 
-Complete tutorial series for llcuda v2.2.0 on Kaggle dual T4.
+Complete tutorial series for llcuda v2.2.0 on Kaggle dual T4 - **11 comprehensive tutorials** from beginner to advanced.
+
+## Core Tutorials (1-10)
 
 | # | Notebook | Open in Kaggle | Description | Time |
 |---|----------|----------------|-------------|------|
@@ -15,13 +17,60 @@ Complete tutorial series for llcuda v2.2.0 on Kaggle dual T4.
 | 09 | [Large Models (70B)](09-large-models.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/09-large-models-kaggle-llcuda-v2-2-0) | 70B on dual T4 | 30 min |
 | 10 | [Complete Workflow](10-complete-workflow.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/10-complete-workflow-llcuda-v2-2-0) | End-to-end | 45 min |
 
+## ⭐ Advanced Visualization (Tutorial 11) - MOST IMPORTANT
+
+| # | Notebook | Open in Kaggle | Description | Time |
+|---|----------|----------------|-------------|------|
+| 11 | [**GGUF Neural Network Visualization**](11-gguf-neural-network-visualization.md) ⭐ | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/11-gguf-neural-network-graphistry-visualization) | **Complete model architecture as interactive graphs** | 60 min |
+
+**Why Tutorial 11 is Critical:**
+- 🏆 **First-of-its-kind**: Only comprehensive GGUF visualization tool
+- 📊 **929 nodes, 981 edges**: Complete Llama-3.2-3B architecture
+- 🎨 **Interactive dashboards**: 8 Graphistry cloud visualizations
+- 🔬 **Research-grade**: PageRank, centrality, community detection
+- 🖥️ **Split-GPU showcase**: LLM (GPU 0) + Analytics (GPU 1)
+- 📥 **Downloadable**: HTML dashboards for offline viewing
+
+**What You'll Visualize:**
+- Complete 28-layer transformer architecture
+- 896 attention heads across all layers
+- Layer-by-layer breakdowns (35 nodes each)
+- Q4_K_M quantization block structure
+- Information flow through the network
+
 ## Learning Paths
 
 ### Beginner (1 hour)
+**Start here** if you're new to llcuda:
+```
 01 → 02 → 03
+Quick Start → Server Setup → Multi-GPU
+```
 
-### Intermediate (3 hours)  
+### Intermediate (3 hours)
+**Full fundamentals** with deployment:
+```
 01 → 02 → 03 → 04 → 05 → 06 → 07 → 10
+All basics through complete workflow
+```
 
 ### Advanced (2 hours)
+**Multi-GPU focus** for large models:
+```
 01 → 03 → 08 → 09
+Quick Start → Multi-GPU → NCCL → 70B Models
+```
+
+### Visualization & Research (2.5 hours) ⭐ **RECOMMENDED**
+**Complete architecture analysis** with Graphistry:
+```
+01 → 03 → 04 → 06 → 11
+Quick Start → Multi-GPU → GGUF → Split-GPU → Architecture Visualization
+```
+
+### Complete Master (6 hours)
+**Everything** from basics to advanced visualization:
+```
+01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09 → 10 → 11
+All tutorials in order
+```

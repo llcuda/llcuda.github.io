@@ -378,9 +378,11 @@ Real Kaggle dual T4 performance metrics:
 
 ---
 
-## :notebook: Tutorial Notebooks (10 Kaggle Notebooks)
+## :notebook: Tutorial Notebooks (11 Kaggle Notebooks)
 
-Complete tutorial series for Kaggle dual T4 environment:
+Complete tutorial series for Kaggle dual T4 environment - **from beginner to advanced architecture visualization**.
+
+### Core Tutorials (1-10)
 
 | # | Notebook | Open in Kaggle | Description | Time |
 |---|----------|----------------|-------------|------|
@@ -395,7 +397,29 @@ Complete tutorial series for Kaggle dual T4 environment:
 | 09 | [Large Models (70B)](tutorials/09-large-models.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/09-large-models-kaggle-llcuda-v2.2.0.ipynb) | 70B on dual T4 with IQ3_XS | 30 min |
 | 10 | [Complete Workflow](tutorials/10-complete-workflow.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/10-complete-workflow-llcuda-v2.2.0.ipynb) | End-to-end production | 45 min |
 
+### ⭐ Advanced Visualization (Tutorial 11) - MOST IMPORTANT
+
+!!! star "First-of-its-Kind: GGUF Neural Network Architecture Visualization"
+
+    **Tutorial 11** is the **most comprehensive project** in the llcuda v2.2.0 series - visualizing complete model architecture as interactive graphs.
+
+| # | Notebook | Open in Kaggle | Description | Time |
+|---|----------|----------------|-------------|------|
+| **11** | [**GGUF Neural Network Visualization**](tutorials/11-gguf-neural-network-visualization.md) ⭐ | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/11-gguf-neural-network-graphistry-visualization.ipynb) | **Complete architecture → interactive dashboards** | **60 min** |
+
+**What Makes Tutorial 11 Unique:**
+
+- 🏆 **Complete Model Visualization**: 929 nodes, 981 edges showing full Llama-3.2-3B architecture
+- 🎨 **8 Interactive Dashboards**: Main architecture + Layers 1-5 + Attention heads + Quantization blocks
+- 🔬 **Research-Grade Analytics**: GPU-accelerated PageRank, centrality metrics, community detection
+- 🖥️ **Split-GPU Showcase**: LLM inference on GPU 0 + Graphistry visualization on GPU 1
+- 📥 **Downloadable HTML**: Complete dashboards for offline viewing
+- 📊 **Layer-by-Layer Analysis**: Detailed breakdown of transformer blocks (35 nodes each)
+- 🎯 **896 Attention Heads**: Visualized across all 28 layers
+- 📦 **Q4_K_M Quantization**: 112 quantization blocks visualized
+
 [:material-notebook: View All Tutorials](tutorials/index.md){ .md-button .md-button--primary }
+[:star: Tutorial 11 Details](tutorials/11-gguf-neural-network-visualization.md){ .md-button }
 
 ---
 
@@ -427,6 +451,16 @@ Choose your path based on experience level:
 === "Unsloth Focus (2 hours)"
     ```
     01 → 04 → 05 → 10
+    ```
+
+    Complete Unsloth fine-tuning and deployment workflow.
+
+=== "Visualization & Research (2.5 hours)"
+    ```
+    01 → 03 → 04 → 06 → 11
+    ```
+
+    ⭐ **RECOMMENDED** - Learn architecture visualization with Graphistry.
     ```
 
     Fine-tuning and deployment pipeline.
