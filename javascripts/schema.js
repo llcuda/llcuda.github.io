@@ -3,38 +3,46 @@
   const schema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "llcuda",
+    "name": "llcuda v2.2.0",
     "applicationCategory": "DeveloperApplication",
+    "applicationSubCategory": "Machine Learning Framework",
     "operatingSystem": "Linux",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "Fast LLM inference on Tesla T4 GPUs with CUDA 12, FlashAttention, Multi-GPU support, and Unsloth integration. Optimized for Kaggle dual T4.",
+    "description": "CUDA 12 inference backend for Unsloth optimized for small GGUF models (1B-5B) on Kaggle dual Tesla T4 GPUs (15GB × 2, SM 7.5). Split-GPU architecture with LLM inference on GPU 0 and Graphistry neural network visualization on GPU 1. Features 11 comprehensive tutorials including groundbreaking GGUF architecture visualization with 929 nodes, 981 edges, and 896 attention heads. Built-in llama.cpp server and NVIDIA NCCL.",
     "softwareVersion": "2.2.0",
     "author": {
       "@type": "Person",
       "name": "Waqas Muhammad",
+      "email": "waqasm86@gmail.com",
       "url": "https://github.com/waqasm86"
     },
     "creator": {
       "@type": "Person",
       "name": "Waqas Muhammad",
+      "email": "waqasm86@gmail.com",
       "url": "https://github.com/waqasm86"
     },
     "datePublished": "2026-01-10",
-    "dateModified": "2026-01-10",
+    "dateModified": "2026-01-22",
     "url": "https://llcuda.github.io/",
     "image": "https://llcuda.github.io/assets/images/social-card.png",
     "screenshot": "https://llcuda.github.io/assets/images/screenshot.png",
     "codeRepository": "https://github.com/llcuda/llcuda",
+    "downloadUrl": "https://github.com/llcuda/llcuda/releases",
+    "installUrl": "https://llcuda.github.io/guides/installation/",
+    "softwareRequirements": "Python 3.11+, CUDA 12.x, Kaggle Dual Tesla T4 GPUs",
+    "memoryRequirements": "30GB VRAM (15GB × 2 Tesla T4)",
+    "processorRequirements": "NVIDIA Tesla T4 (SM 7.5) or compatible GPU",
     "programmingLanguage": [
       "Python",
       "C++",
       "CUDA"
     ],
-    "keywords": "llcuda, CUDA, Tesla T4, LLM inference, FlashAttention, GGUF, Unsloth, Kaggle, Multi-GPU, GPU acceleration",
+    "keywords": "llcuda, llcuda v2.2.0, CUDA 12, Tesla T4, Kaggle, dual GPU, LLM inference, Unsloth, GGUF quantization, 1B-5B models, small models, llama.cpp, multi-GPU, tensor-split, Graphistry, neural network visualization, GGUF visualization, 929 nodes, 981 edges, 896 attention heads, FlashAttention, split-GPU architecture, RAPIDS cuGraph, PageRank, transformer architecture, Llama-3.2-3B, interactive dashboards, NVIDIA NCCL",
     "license": "https://opensource.org/licenses/MIT",
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -42,14 +50,22 @@
       "ratingCount": "1"
     },
     "featureList": [
-      "134 tokens/sec verified performance on Tesla T4",
-      "FlashAttention v2 support (2-3x faster)",
+      "Optimized for 1B-5B parameter models on Kaggle dual T4",
+      "Split-GPU architecture: LLM on GPU 0, Graphistry on GPU 1",
+      "11 comprehensive tutorials from beginner to advanced",
+      "Tutorial 11: GGUF neural network visualization (929 nodes, 981 edges)",
+      "896 attention heads visualization across 28 transformer layers",
+      "Interactive Graphistry dashboards with cloud URLs",
+      "GPU-accelerated PageRank and centrality analytics",
+      "Built-in llama.cpp server with OpenAI-compatible API",
+      "29 GGUF quantization formats (K-quants, I-quants)",
+      "FlashAttention v2 support (2-3x faster inference)",
       "Tensor Core optimization (SM 7.5)",
-      "GitHub-only distribution with auto-download",
-      "GGUF format support",
-      "Kaggle dual T4 optimized",
-      "Multi-GPU tensor-split support",
-      "Unsloth integration"
+      "NVIDIA NCCL for PyTorch distributed training",
+      "Unsloth integration for fine-tuning workflow",
+      "Auto-download CUDA 12.5 binaries from GitHub Releases",
+      "Knowledge graph extraction and visualization",
+      "RAPIDS cuDF and cuGraph integration"
     ]
   };
 
@@ -80,13 +96,20 @@
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "llcuda Documentation",
+    "name": "llcuda v2.2.0 Documentation - CUDA12 Inference for 1B-5B Models on Kaggle",
+    "alternateName": "llcuda Documentation",
     "url": "https://llcuda.github.io/",
-    "description": "Official documentation for llcuda v2.2.0 - Tesla T4 Multi-GPU CUDA Inference Engine",
+    "description": "Official documentation for llcuda v2.2.0 - CUDA 12 inference backend optimized for small GGUF models (1B-5B) on Kaggle dual Tesla T4 GPUs with split-GPU architecture and neural network visualization. Features 11 comprehensive tutorials including GGUF architecture visualization with 929 nodes and 981 edges.",
+    "inLanguage": "en",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://llcuda.github.io/search/?q={search_term_string}",
       "query-input": "required name=search_term_string"
+    },
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "llcuda v2.2.0",
+      "description": "CUDA 12 inference backend for Unsloth with neural network visualization"
     }
   };
 
@@ -99,15 +122,16 @@
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "llcuda v2.2.0 - Tesla T4 Multi-GPU CUDA Inference Documentation",
-    "description": "Comprehensive documentation for llcuda, a fast LLM inference engine for Tesla T4 GPUs",
+    "headline": "llcuda v2.2.0 - CUDA12 Inference Backend for 1B-5B Models on Kaggle Dual T4 with Neural Network Visualization",
+    "description": "Comprehensive documentation for llcuda v2.2.0, a CUDA 12 inference backend optimized for small GGUF models (1B-5B) on Kaggle dual Tesla T4 GPUs. Features split-GPU architecture with LLM inference and Graphistry neural network visualization. Includes 11 tutorials with groundbreaking GGUF architecture visualization (929 nodes, 981 edges, 896 attention heads).",
     "author": {
       "@type": "Person",
       "name": "Waqas Muhammad",
+      "email": "waqasm86@gmail.com",
       "url": "https://github.com/waqasm86"
     },
     "datePublished": "2026-01-10",
-    "dateModified": "2026-01-10",
+    "dateModified": "2026-01-22",
     "publisher": {
       "@type": "Person",
       "name": "Waqas Muhammad"
@@ -115,7 +139,29 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://llcuda.github.io/"
-    }
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "CUDA 12 Inference"
+      },
+      {
+        "@type": "Thing",
+        "name": "Neural Network Visualization"
+      },
+      {
+        "@type": "Thing",
+        "name": "GGUF Quantization"
+      },
+      {
+        "@type": "Thing",
+        "name": "Kaggle Dual T4 GPUs"
+      },
+      {
+        "@type": "Thing",
+        "name": "Split-GPU Architecture"
+      }
+    ]
   };
 
   const articleScript = document.createElement('script');
