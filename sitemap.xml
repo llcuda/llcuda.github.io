@@ -2,238 +2,242 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://llcuda.github.io/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/client/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/examples/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/gguf/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/graphistry/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/models/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/multigpu/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/nccl/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/overview/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/api/server/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/architecture/gpu0-llm/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/architecture/gpu1-graphistry/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/architecture/overview/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/architecture/split-gpu/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/architecture/tensor-split-vs-nccl/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/gguf/i-quants/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/gguf/k-quants/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/gguf/overview/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/gguf/selection/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/gguf/vram-estimation/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/graphistry/examples/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/graphistry/knowledge-graphs/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/graphistry/overview/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/graphistry/rapids/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/graphistry/split-gpu-setup/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/build-from-source/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/faq/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/first-steps/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/installation/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/kaggle-setup/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/model-selection/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/quickstart/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/guides/troubleshooting/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/kaggle/dual-gpu-setup/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/kaggle/large-models/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/kaggle/multi-gpu-inference/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/kaggle/overview/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/kaggle/tensor-split/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/benchmarks/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/dual-t4-results/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/flash-attention/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/memory/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/performance/optimization/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/01-quickstart/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/02-server-setup/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/03-multi-gpu/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/04-gguf-quantization/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/05-unsloth-integration/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/06-split-gpu-graphistry/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/07-openai-api/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/08-nccl-pytorch/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/09-large-models/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/tutorials/10-complete-workflow/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
+    </url>
+    <url>
+         <loc>https://llcuda.github.io/tutorials/11-gguf-neural-network-visualization/</loc>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/unsloth/best-practices/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/unsloth/deployment/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/unsloth/fine-tuning/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/unsloth/gguf-export/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
     <url>
          <loc>https://llcuda.github.io/unsloth/overview/</loc>
-         <lastmod>2026-01-18</lastmod>
+         <lastmod>2026-01-22</lastmod>
     </url>
 </urlset>
