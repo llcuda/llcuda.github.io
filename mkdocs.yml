@@ -1,6 +1,6 @@
-site_name: llcuda v2.2.0 - CUDA12 Inference Backend for Unsloth
+site_name: llcuda v2.2.0 - CUDA12 Inference Backend for Unsloth | 1B-5B Models on Kaggle Dual T4
 site_url: https://llcuda.github.io/
-site_description: CUDA 12 inference backend for Unsloth with multi-GPU support on Kaggle. Deploy fine-tuned models on dual Tesla T4 GPUs with llama.cpp server, GGUF quantization, and Graphistry visualization. Run 70B models with tensor-split architecture.
+site_description: CUDA 12 inference backend for Unsloth optimized for small GGUF models (1B-5B) on Kaggle dual Tesla T4 GPUs. Split-GPU architecture with LLM inference on GPU 0 and Graphistry neural network visualization on GPU 1. Features 11 comprehensive tutorials including groundbreaking GGUF architecture visualization with 929 nodes and 981 edges. Built-in llama.cpp server, NVIDIA NCCL, and interactive dashboards.
 site_author: Waqas Muhammad
 repo_name: llcuda/llcuda
 repo_url: https://github.com/llcuda/llcuda

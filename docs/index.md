@@ -1,15 +1,20 @@
 ---
-title: llcuda v2.2.0 - CUDA12 Inference Backend for Unsloth
-description: CUDA 12 inference backend for Unsloth with multi-GPU support on Kaggle. Deploy fine-tuned models on dual Tesla T4 GPUs with llama.cpp server, GGUF quantization, and Graphistry visualization. Run 70B models with tensor-split architecture.
-keywords: llcuda, CUDA 12, Tesla T4, Kaggle, dual GPU, LLM inference, Unsloth, GGUF, quantization, llama.cpp, multi-GPU, tensor-split, Graphistry, knowledge graphs, FlashAttention, 70B models, split-GPU architecture
+title: llcuda v2.2.0 - CUDA12 Inference Backend for Unsloth | 1B-5B Models on Kaggle Dual T4
+description: CUDA 12 inference backend for Unsloth optimized for small GGUF models (1B-5B) on Kaggle dual Tesla T4 GPUs (15GB × 2, SM 7.5). Split-GPU architecture with LLM inference on GPU 0 and Graphistry neural network visualization on GPU 1. Features 11 comprehensive tutorials including groundbreaking GGUF architecture visualization with 929 nodes and 981 edges. Built-in llama.cpp server, NVIDIA NCCL, and interactive dashboards for complete model architecture analysis.
+keywords: llcuda, llcuda v2.2.0, CUDA 12, Tesla T4, Kaggle, dual GPU, LLM inference, Unsloth, GGUF, quantization, llama.cpp, multi-GPU, tensor-split, Graphistry, neural network visualization, GGUF visualization, 1B-5B models, small models, FlashAttention, split-GPU architecture, 929 nodes, 981 edges, attention heads, transformer architecture, PageRank, cuGraph, RAPIDS, interactive dashboards, Llama-3.2-3B
 author: Waqas Muhammad
-og:title: llcuda v2.2.0 - CUDA12 Inference Backend for Unsloth
-og:description: Deploy fine-tuned LLMs on Kaggle dual T4 GPUs with llama.cpp server and Graphistry visualization
+canonical: https://llcuda.github.io/
+og:type: website
+og:title: llcuda v2.2.0 - CUDA12 Inference Backend for Unsloth | 1B-5B Models on Kaggle
+og:description: CUDA 12 inference backend for Unsloth optimized for small GGUF models (1B-5B) on Kaggle dual Tesla T4. Split-GPU architecture with LLM on GPU 0 and Graphistry neural network visualization on GPU 1. 11 comprehensive tutorials including groundbreaking GGUF architecture visualization with 929 nodes, 981 edges, 896 attention heads.
 og:image: https://llcuda.github.io/assets/images/social-card.png
 og:url: https://llcuda.github.io/
+og:site_name: llcuda v2.2.0 Documentation
 twitter:card: summary_large_image
-twitter:title: llcuda v2.2.0 - CUDA12 Inference Backend
-twitter:description: Deploy fine-tuned LLMs on Kaggle dual T4 GPUs
+twitter:site: @waqasm86
+twitter:creator: @waqasm86
+twitter:title: llcuda v2.2.0 - CUDA12 Inference Backend | 1B-5B Models
+twitter:description: CUDA 12 inference backend for Unsloth optimized for 1B-5B models on Kaggle dual T4. Split-GPU with neural network visualization. 11 tutorials including GGUF architecture visualization (929 nodes, 981 edges).
 twitter:image: https://llcuda.github.io/assets/images/social-card.png
 ---
 
