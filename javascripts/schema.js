@@ -27,7 +27,7 @@
       "url": "https://github.com/waqasm86"
     },
     "datePublished": "2026-01-10",
-    "dateModified": "2026-01-22",
+    "dateModified": "2026-01-25",
     "url": "https://llcuda.github.io/",
     "image": "https://llcuda.github.io/assets/images/social-card.png",
     "screenshot": "https://llcuda.github.io/assets/images/screenshot.png",
@@ -131,7 +131,7 @@
       "url": "https://github.com/waqasm86"
     },
     "datePublished": "2026-01-10",
-    "dateModified": "2026-01-22",
+    "dateModified": "2026-01-25",
     "publisher": {
       "@type": "Person",
       "name": "Waqas Muhammad"
