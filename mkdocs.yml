@@ -171,16 +171,16 @@ nav:
           - kaggle/large-models.md
       - Tutorial Notebooks:
           - tutorials/index.md
-          - tutorials/01-quickstart.md
-          - tutorials/02-server-setup.md
-          - tutorials/03-multi-gpu.md
-          - tutorials/04-gguf-quantization.md
-          - tutorials/05-unsloth-integration.md
-          - tutorials/06-split-gpu-graphistry.md
-          - tutorials/07-openai-api.md
-          - tutorials/08-nccl-pytorch.md
-          - tutorials/09-large-models.md
-          - tutorials/10-complete-workflow.md
+          - "01: Quick Start": tutorials/01-quickstart.md
+          - "02: Server Setup": tutorials/02-server-setup.md
+          - "03: Multi-GPU Inference": tutorials/03-multi-gpu.md
+          - "04: GGUF Quantization": tutorials/04-gguf-quantization.md
+          - "05: Unsloth Integration": tutorials/05-unsloth-integration.md
+          - "06: Split-GPU Graphistry": tutorials/06-split-gpu-graphistry.md
+          - "07: Knowledge Graph Extraction": tutorials/07-openai-api.md
+          - "08: Document Network Analysis": tutorials/08-nccl-pytorch.md
+          - "09: Large Models (13B+)": tutorials/09-large-models.md
+          - "10: Complete Workflow": tutorials/10-complete-workflow.md
           - "⭐ 11: GGUF Neural Network Visualization": tutorials/11-gguf-neural-network-visualization.md
       - Architecture:
           - architecture/overview.md

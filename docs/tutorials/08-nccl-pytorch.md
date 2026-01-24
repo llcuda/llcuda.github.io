@@ -1,45 +1,59 @@
-# NCCL and PyTorch
+# Document Network Analysis with Graphistry
 
-Understanding NCCL vs tensor-split for distributed workloads.
+Analyze document similarity and topic clustering using GPU-accelerated graph analytics.
 
-**Level**: Advanced | **Time**: 25 minutes | **VRAM Required**: 15-25 GB
+**Level**: Advanced | **Time**: 35 minutes | **VRAM Required**: GPU 0: 6-10 GB, GPU 1: 3-5 GB
 
 ---
 
-## Key Differences
+---
 
-**llama-server tensor-split**:
-- Native CUDA layer distribution
-- NO NCCL required
-- For LLM inference
+## Overview
 
-**PyTorch DDP with NCCL**:
-- Distributed training
-- Requires NCCL
-- For fine-tuning
+This notebook demonstrates how to analyze document similarity and topic clustering using GPU-accelerated graph analytics with RAPIDS cuGraph and interactive visualization with Graphistry.
 
-## llama-server (NO NCCL)
+## Key Features
+
+- **Document embedding** generation via LLM
+- **Similarity network** construction (cosine similarity)
+- **Community detection** using RAPIDS cuGraph
+- **Topic clustering** with GPU-accelerated algorithms
+- **Interactive visualization** with Graphistry
+- **Dual-GPU workflow** (embeddings on GPU 0, analytics on GPU 1)
+
+## Key Algorithms
+
+- **Louvain community detection** - Find document clusters
+- **PageRank** - Identify influential documents
+- **Betweenness centrality** - Find bridge documents
+- **K-core decomposition** - Extract dense subnetworks
+
+## Applications
+
+- Research paper citation networks
+- News article topic analysis
+- Corporate document organization
+- Social media content clustering
+
+## Workflow
 
 ```python
-from llcuda.server import ServerConfig
+# 1. Generate embeddings
+embeddings = get_embeddings_from_llm(documents)
 
-config = ServerConfig(
-    model_path="model.gguf",
-    tensor_split="0.5,0.5",  # Native CUDA split
-    n_gpu_layers=99
-)
-```
+# 2. Build similarity graph
+similarity_matrix = cosine_similarity(embeddings)
+graph = build_graph_from_similarity(similarity_matrix, threshold=0.7)
 
-## PyTorch DDP (Uses NCCL)
+# 3. GPU analytics with cuGraph
+communities = cugraph.louvain(graph)
+pagerank = cugraph.pagerank(graph)
 
-```python
-import torch.distributed as dist
-
-dist.init_process_group(backend="nccl")
-
-# DDP training code here
+# 4. Visualize
+g = graphistry.nodes(docs_df).edges(edges_df)
+g.plot()
 ```
 
 ## Open in Kaggle
 
-[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/08-nccl-pytorch-llcuda-v2-2-0)
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/08-document-network-analysis-graphistry-llcuda-v2-2-0.ipynb)
