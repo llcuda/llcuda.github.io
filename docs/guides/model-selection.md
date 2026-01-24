@@ -1,6 +1,6 @@
 # Model Selection Guide
 
-Choose the right model and quantization for your use case with llcuda v2.1.0.
+Choose the right model and quantization for your use case with llcuda v2.2.0.
 
 ## Quick Recommendations
 

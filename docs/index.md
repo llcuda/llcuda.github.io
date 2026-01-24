@@ -65,19 +65,19 @@ llcuda v2.2.0 implements a unique **split-GPU architecture** for Kaggle's dual T
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': {'fontSize':'18px'}}}%%
 graph TD
-    A[Unsloth Fine-Tuning] --> B[GGUF Export]
-    B --> C[llcuda Deployment]
-    C --> D[GPU 0: LLM Inference]
-    C --> E[GPU 1: Graphistry Visualization]
-    D --> F[Knowledge Extraction]
-    F --> E
-    E --> G[Interactive Graph Visualization]
+    A[GGUF Model<br/>HuggingFace] --> B[llcuda Deployment<br/>Kaggle Dual T4]
+    B --> C[GPU 0: llama-server<br/>LLM Inference]
+    B --> D[GPU 1: RAPIDS + Graphistry<br/>Analytics & Visualization]
+    C --> E[OpenAI-Compatible API<br/>:8090]
+    E --> F[Knowledge Extraction<br/>Entity & Relationships]
+    F --> D
+    D --> G[Interactive Dashboards<br/>Graphistry Cloud]
 
-    style A fill:#9C27B0,stroke:#7B1FA2,stroke-width:3px,color:#fff
-    style B fill:#FF9800,stroke:#F57C00,stroke-width:3px,color:#fff
-    style C fill:#FF5722,stroke:#E64A19,stroke-width:3px,color:#fff
-    style D fill:#4CAF50,stroke:#388E3C,stroke-width:3px,color:#fff
-    style E fill:#2196F3,stroke:#1976D2,stroke-width:3px,color:#fff
+    style A fill:#FF9800,stroke:#F57C00,stroke-width:3px,color:#fff
+    style B fill:#FF5722,stroke:#E64A19,stroke-width:3px,color:#fff
+    style C fill:#4CAF50,stroke:#388E3C,stroke-width:3px,color:#fff
+    style D fill:#2196F3,stroke:#1976D2,stroke-width:3px,color:#fff
+    style E fill:#00BCD4,stroke:#0097A7,stroke-width:3px,color:#fff
     style F fill:#00BCD4,stroke:#0097A7,stroke-width:3px,color:#fff
     style G fill:#03A9F4,stroke:#0288D1,stroke-width:3px,color:#fff
 
