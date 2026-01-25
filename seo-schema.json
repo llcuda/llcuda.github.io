@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "llcuda",
+      "version": "2.2.0",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Linux",
+      "description": "CUDA 12 inference backend for Unsloth optimized for small GGUF models (1B-5B parameters) on Kaggle dual Tesla T4 GPUs. Features split-GPU architecture with LLM inference on GPU 0 and Graphistry neural network visualization on GPU 1.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "softwareVersion": "2.2.0",
+      "releaseNotes": "https://github.com/llcuda/llcuda/releases/tag/v2.2.0",
+      "downloadUrl": "https://github.com/llcuda/llcuda",
+      "url": "https://llcuda.github.io",
+      "codeRepository": "https://github.com/llcuda/llcuda",
+      "programmingLanguage": ["Python", "CUDA", "C++"],
+      "keywords": "CUDA, Tesla T4, GGUF, llama.cpp, Unsloth, Kaggle, multi-GPU, LLM inference, Graphistry, RAPIDS, neural network visualization, split-GPU architecture, FlashAttention, tensor parallelism",
+      "author": {
+        "@type": "Person",
+        "name": "Waqas Muhammad",
+        "url": "https://github.com/waqasm86"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "potentialAction": {
+        "@type": "InstallAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "pip install git+https://github.com/llcuda/llcuda.git"
+        }
+      }
+    },
+    {
+      "@type": "WebSite",
+      "name": "llcuda Documentation",
+      "url": "https://llcuda.github.io",
+      "description": "Official documentation for llcuda v2.2.0 - CUDA 12 inference backend for Unsloth on Kaggle dual Tesla T4 GPUs",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://llcuda.github.io/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "headline": "llcuda v2.2.0: CUDA 12 Inference Backend for Small GGUF Models on Dual Tesla T4",
+      "description": "Production-ready CUDA 12 inference framework optimized for 1B-5B parameter GGUF models on Kaggle's dual Tesla T4 GPUs. Features split-GPU architecture, 11 comprehensive tutorials, and groundbreaking neural network visualization with 929 nodes and 981 edges.",
+      "keywords": "CUDA 12, Tesla T4, GGUF quantization, llama.cpp, multi-GPU inference, Graphistry visualization, RAPIDS cuGraph, Unsloth fine-tuning, Kaggle notebooks",
+      "url": "https://llcuda.github.io",
+      "image": "https://llcuda.github.io/assets/images/logo.svg",
+      "author": {
+        "@type": "Person",
+        "name": "Waqas Muhammad"
+      },
+      "datePublished": "2026-01-25",
+      "dateModified": "2026-01-25"
+    }
+  ]
+}
