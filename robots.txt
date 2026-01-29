@@ -1,4 +1,19 @@
+# robots.txt for llcuda v2.2.0
 User-agent: *
 Allow: /
-Sitemap: https://llcuda.github.io/sitemap-index.xml
+
+# Sitemaps
 Sitemap: https://llcuda.github.io/sitemap.xml
+Sitemap: https://llcuda.github.io/sitemap.xml.gz
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0

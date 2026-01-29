@@ -1,6 +1,0 @@
-<Files "sitemap.xml">
-  ForceType application/xml
-</Files>
-<Files "sitemap-index.xml">
-  ForceType application/xml
-</Files>
