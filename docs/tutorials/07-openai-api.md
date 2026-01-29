@@ -47,4 +47,4 @@ g.edges(relationships_df).nodes(entities_df).plot()
 
 ## Open in Kaggle
 
-[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/07-knowledge-graph-extraction-graphistry-v2.2.0.ipynb)
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/07-knowledge-graph-extraction-graphistry-v2-2-0)

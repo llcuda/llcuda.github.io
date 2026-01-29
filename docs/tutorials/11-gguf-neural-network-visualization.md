@@ -6,7 +6,7 @@
 **Platform:** Kaggle (2× Tesla T4)
 **Prerequisites:** Notebooks 01-06
 
-[![Open in Kaggle](https://img.shields.io/badge/Kaggle-Open%20Notebook-blue?logo=kaggle)](https://kaggle.com/code)
+[![Open in Kaggle](https://img.shields.io/badge/Kaggle-Open%20Notebook-blue?logo=kaggle)](https://www.kaggle.com/code/waqasm86/11-gguf-neural-network-graphistry-vis-executed-2)
 
 ---
 
@@ -776,4 +776,4 @@ If you use this visualization tool in your research, please cite:
 
 ---
 
-**Ready to visualize?** [Open this notebook in Kaggle](https://kaggle.com/code) and start exploring! 🚀
+**Ready to visualize?** [Open this notebook in Kaggle](https://www.kaggle.com/code/waqasm86/11-gguf-neural-network-graphistry-vis-executed-2) and start exploring! 🚀

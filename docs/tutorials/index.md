@@ -21,7 +21,7 @@ Complete tutorial series for llcuda v2.2.0 on Kaggle dual T4 - **11 comprehensiv
 
 | # | Notebook | Open in Kaggle | Description | Time |
 |---|----------|----------------|-------------|------|
-| 11 | [**GGUF Neural Network Visualization**](11-gguf-neural-network-visualization.md) ⭐ | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/11-gguf-neural-network-graphistry-visualization) | **Complete model architecture as interactive graphs** | 60 min |
+| 11 | [**GGUF Neural Network Visualization**](11-gguf-neural-network-visualization.md) ⭐ | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/11-gguf-neural-network-graphistry-vis-executed-2) | **Complete model architecture as interactive graphs** | 60 min |
 
 **Why Tutorial 11 is Critical:**
 - 🏆 **First-of-its-kind**: Only comprehensive GGUF visualization tool

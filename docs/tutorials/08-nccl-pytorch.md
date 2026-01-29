@@ -56,4 +56,4 @@ g.plot()
 
 ## Open in Kaggle
 
-[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/08-document-network-analysis-graphistry-llcuda-v2-2-0.ipynb)
+[![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/08-document-network-analysis-graphistry-llcuda-v2-2-0)
