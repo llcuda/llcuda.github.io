@@ -6,9 +6,11 @@ from datetime import datetime
 # Convert file paths to URLs
 file_list = [
     "./api/client/index.html",
+    "./api/device/index.html",
     "./api/examples/index.html",
     "./api/gguf/index.html",
     "./api/graphistry/index.html",
+    "./api/inference-engine/index.html",
     "./api/models/index.html",
     "./api/multigpu/index.html",
     "./api/nccl/index.html",

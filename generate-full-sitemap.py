@@ -29,6 +29,8 @@ urls = [
     
     # API
     ("https://llcuda.github.io/api/overview/", "monthly", "0.8"),
+    ("https://llcuda.github.io/api/inference-engine/", "monthly", "0.8"),
+    ("https://llcuda.github.io/api/device/", "monthly", "0.8"),
     ("https://llcuda.github.io/api/client/", "monthly", "0.8"),
     ("https://llcuda.github.io/api/server/", "monthly", "0.8"),
     ("https://llcuda.github.io/api/examples/", "monthly", "0.8"),

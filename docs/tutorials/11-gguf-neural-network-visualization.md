@@ -1,6 +1,6 @@
 # Tutorial 11: GGUF Neural Network Architecture Visualization ⭐
 
-**Notebook:** `11-gguf-neural-network-graphistry-visualization.ipynb`
+**Notebook:** `11-gguf-neural-network-graphistry-vis-executed-2.ipynb`
 **Difficulty:** Advanced
 **Time:** 60 minutes
 **Platform:** Kaggle (2× Tesla T4)
@@ -21,6 +21,32 @@ This is the **MOST IMPORTANT** tutorial in the llcuda v2.2.0 series - a groundbr
 3. **Research-Grade**: Produces publication-quality visualizations and metrics
 4. **Split-GPU Showcase**: Demonstrates GPU 0 (LLM) + GPU 1 (Visualization) architecture
 5. **Production-Ready**: Generates downloadable HTML dashboards
+
+---
+
+## 🧭 Notebook Workflow (End-to-End)
+
+```mermaid
+flowchart TD
+  A[Verify dual GPUs] --> B[Install llcuda + RAPIDS + Graphistry]
+  B --> C[Download GGUF model from Hugging Face]
+  C --> D[Start llama-server on GPU 0]
+  D --> E[Extract architecture + build graph]
+  E --> F[GPU 1: cuGraph analytics]
+  F --> G[Register Graphistry]
+  G --> H[Create visual dashboards + export HTML]
+```
+
+### What the Notebook Actually Does
+
+1. **Detects dual T4 GPUs** and confirms split‑GPU plan.
+2. **Installs dependencies** (llcuda v2.2.0, RAPIDS cuGraph, Graphistry).
+3. **Downloads the GGUF model** (Llama‑3.2‑3B Q4_K_M).
+4. **Starts llama‑server on GPU 0** for inference and architecture queries.
+5. **Builds a full graph model** (nodes, edges, types, metrics).
+6. **Runs GPU analytics on GPU 1** (PageRank, centrality).
+7. **Creates Graphistry visualizations** (main, layers, heads, quant blocks).
+8. **Generates HTML dashboards** for sharing and offline viewing.
 
 ---
 
