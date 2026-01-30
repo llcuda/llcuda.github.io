@@ -16,6 +16,12 @@ config = ServerConfig(
 )
 ```
 
+```mermaid
+flowchart LR
+  A[Tensor Split] --> B[llama.cpp inference]
+  C[NCCL] --> D[PyTorch distributed training]
+```
+
 ## NCCL (PyTorch)
 
 **What**: Multi-GPU communication primitives

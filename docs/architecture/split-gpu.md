@@ -4,33 +4,27 @@ Run LLM on GPU 0 + Graphistry on GPU 1.
 
 ## Architecture
 
-```
-GPU 0 (T4 - 15GB)          GPU 1 (T4 - 15GB)
-┌──────────────────┐      ┌──────────────────┐
-│  llama-server    │      │  RAPIDS cuDF     │
-│  GGUF Model      │ ────>│  cuGraph         │
-│  LLM Inference   │      │  Graphistry[ai]  │
-│  ~5-12GB VRAM    │      │  Network Viz     │
-└──────────────────┘      └──────────────────┘
+```mermaid
+flowchart LR
+  A[GPU 0: llama-server<br/>GGUF inference] --> B[GPU 1: RAPIDS + Graphistry<br/>Visualization]
 ```
 
 ## Configuration
 
 ```python
-from llcuda.graphistry import SplitGPUConfig
-import os
+from llcuda.graphistry import SplitGPUManager, GraphWorkload
 
-# Assign GPUs
-config = SplitGPUConfig(
-    llm_gpu=0,      # GPU 0 for LLM
-    graph_gpu=1     # GPU 1 for Graphistry
-)
+# Assign GPUs (Kaggle dual T4 defaults)
+manager = SplitGPUManager()
+manager.assign_llm(gpu_id=0)
+manager.assign_graph(gpu_id=1)
 
-# Set CUDA device for llama-server
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+# LLM workload (GPU 0)
+llm_env = manager.get_llm_env()
 
-# Start llama-server on GPU 0
-# (Graphistry will use GPU 1)
+# Graph workload (GPU 1)
+graph_env = manager.get_graph_env()
+workload = GraphWorkload(gpu_id=1)
 ```
 
 ## Use Cases

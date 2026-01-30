@@ -6,6 +6,13 @@ Complete API documentation for llcuda v2.2.0.
 
 llcuda provides a simple, PyTorch-style API for GPU-accelerated LLM inference.
 
+## :compass: Choose Your Interface
+
+Pick the workflow that fits your use case:
+
+- **OpenAI-compatible client** → [`LlamaCppClient`](client.md) for chat/completions APIs
+- **Simple engine wrapper** → [`InferenceEngine`](inference-engine.md) for quick local inference
+
 ### Core Classes
 
 | Class | Purpose | Documentation |

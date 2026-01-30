@@ -144,32 +144,44 @@ print_gpu_info()
 
 ### Step 3: Run Basic Inference
 
-```python
-from llcuda.server import ServerManager, ServerConfig
+=== "LlamaCppClient (OpenAI-style)"
+    ```python
+    from llcuda.server import ServerManager, ServerConfig
 
-# Configure for single GPU (GPU 0)
-config = ServerConfig(
-    model_path="model.gguf",  # Your GGUF model
-    n_gpu_layers=99,          # Offload all layers to GPU
-    flash_attn=True,          # Enable FlashAttention
-)
+    # Configure for single GPU (GPU 0)
+    config = ServerConfig(
+        model_path="model.gguf",  # Your GGUF model
+        n_gpu_layers=99,          # Offload all layers to GPU
+        flash_attn=True,          # Enable FlashAttention
+    )
 
-# Start server
-server = ServerManager()
-server.start_with_config(config)
-server.wait_until_ready()
+    # Start server
+    server = ServerManager()
+    server.start_with_config(config)
+    server.wait_until_ready()
 
-# Use OpenAI API
-from llcuda.api import LlamaCppClient
+    # OpenAI-compatible client
+    from llcuda.api import LlamaCppClient
 
-client = LlamaCppClient("http://localhost:8080")
-response = client.chat.completions.create(
-    messages=[{"role": "user", "content": "Explain quantum computing"}],
-    max_tokens=200
-)
+    client = LlamaCppClient("http://localhost:8080")
+    response = client.chat.completions.create(
+        messages=[{"role": "user", "content": "Explain quantum computing"}],
+        max_tokens=200
+    )
 
-print(response.choices[0].message.content)
-```
+    print(response.choices[0].message.content)
+    ```
+
+=== "InferenceEngine (Simpler)"
+    ```python
+    import llcuda
+
+    engine = llcuda.InferenceEngine()
+    engine.load_model("gemma-3-1b-Q4_K_M", auto_start=True)
+
+    result = engine.infer("Explain quantum computing", max_tokens=200)
+    print(result.text)
+    ```
 
 !!! success "Auto-Download Binaries"
     CUDA binaries (961 MB) download automatically from [GitHub Releases v2.2.0](https://github.com/llcuda/llcuda/releases/tag/v2.2.0) on first import. Cached for future runs!

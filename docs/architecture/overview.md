@@ -33,6 +33,16 @@ llcuda v2.2.0 architecture for Kaggle dual T4.
 └─────────────────────────────────────────┘
 ```
 
+```mermaid
+flowchart TD
+  A[llcuda Python API] --> B[Server Manager]
+  B --> C[llama.cpp Server (CUDA)]
+  C --> D[CUDA 12 + cuBLAS]
+  D --> E[Kaggle Dual T4 GPUs]
+  E --> E0[GPU 0: LLM inference]
+  E --> E1[GPU 1: Graphistry/RAPIDS]
+```
+
 ## Key Components
 
 - **Python APIs**: High-level interfaces

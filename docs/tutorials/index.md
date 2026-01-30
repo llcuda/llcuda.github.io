@@ -2,6 +2,11 @@
 
 Complete tutorial series for llcuda v2.2.0 on Kaggle dual T4 - **11 comprehensive tutorials** from beginner to advanced.
 
+!!! tip "Recommended Setup"
+    - Kaggle notebook with **2× Tesla T4 (30GB VRAM)**
+    - CUDA 12 environment
+    - Use the [Kaggle Setup Guide](../guides/kaggle-setup.md) before starting
+
 ## Core Tutorials (1-10)
 
 | # | Notebook | Open in Kaggle | Description | Time |
