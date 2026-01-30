@@ -288,23 +288,18 @@ Complete workflow from fine-tuning to deployment:
 Unique capability: **Run LLM inference on GPU 0 while using GPU 1 for RAPIDS/Graphistry visualization**
 
 ```python
-from llcuda.graphistry import SplitGPUConfig
-import graphistry
+from llcuda.graphistry import SplitGPUManager, GraphWorkload, register_graphistry
 
 # Configure split-GPU setup
-config = SplitGPUConfig(
-    llm_gpu=0,      # GPU 0 for llama-server
-    graph_gpu=1     # GPU 1 for Graphistry
-)
+manager = SplitGPUManager()
+manager.assign_llm(0)
+manager.assign_graph(1)
 
-# Set Graphistry to use GPU 1
-graphistry.register(
-    api=3,
-    protocol="https",
-    server="hub.graphistry.com"
-)
+# Graphistry on GPU 1
+workload = GraphWorkload(gpu_id=1)
+register_graphistry(api=3, protocol="https", server="hub.graphistry.com")
 
-# Now run LLM on GPU 0 and visualize graphs on GPU 1
+# Run LLM on GPU 0 and visualize graphs on GPU 1
 ```
 
 **Use Cases:**
