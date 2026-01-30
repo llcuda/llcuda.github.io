@@ -7,6 +7,10 @@ Extract knowledge graphs from LLM outputs.
 ### 1. Generate Text (GPU 0)
 ```python
 from llcuda.api import LlamaCppClient
+from llcuda.graphistry import SplitGPUManager
+
+manager = SplitGPUManager()
+manager.assign_llm(0)
 
 client = LlamaCppClient()
 response = client.chat.completions.create(
@@ -39,9 +43,15 @@ edges_df = cudf.DataFrame(relationships)
 
 ### 4. Visualize (GPU 1)
 ```python
-import graphistry
+from llcuda.graphistry import GraphWorkload, register_graphistry
 
-g = graphistry.edges(edges_df).nodes(nodes_df)
+workload = GraphWorkload(gpu_id=1)
+register_graphistry(api=3, protocol="https", server="hub.graphistry.com")
+
+g = workload.create_knowledge_graph(
+    entities=entities,
+    relationships=relationships
+)
 g.plot()
 ```
 

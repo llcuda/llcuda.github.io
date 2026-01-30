@@ -1,22 +1,23 @@
 # LlamaCppClient API
 
-OpenAI-compatible client for llama-server.
+OpenAI-compatible and native llama.cpp client for llama-server.
 
 ## Overview
 
-The `LlamaCppClient` provides an OpenAI-compatible interface to llama-server.
+The `LlamaCppClient` provides OpenAI-compatible chat/completions plus native endpoints (complete, embeddings, tokenize).
 
 ## Basic Usage
 
 ```python
-from llcuda.api.client import LlamaCppClient
+from llcuda.api import LlamaCppClient
 
 client = LlamaCppClient(base_url="http://localhost:8080")
 
-response = client.create_chat_completion(
+response = client.chat.completions.create(
     messages=[{"role": "user", "content": "Hello!"}],
     max_tokens=100
 )
+print(response.choices[0].message.content)
 ```
 
 ## Class Reference
@@ -35,31 +36,40 @@ class LlamaCppClient:
 
 ### Methods
 
-#### `create_chat_completion()`
+#### `chat.completions.create()`
 
 ```python
-def create_chat_completion(
-    self,
-    messages: List[Dict[str, str]],
-    max_tokens: int = 100,
-    temperature: float = 0.7,
-    top_p: float = 0.9,
-    stream: bool = False
-) -> Dict:
-    """Create chat completion.
-    
-    Args:
-        messages: List of message dicts with 'role' and 'content'
-        max_tokens: Maximum tokens to generate
-        temperature: Sampling temperature
-        top_p: Nucleus sampling parameter
-        stream: Enable streaming
-        
-    Returns:
-        Response dict with 'choices', 'usage', etc.
-    """
+response = client.chat.completions.create(
+    messages=[{"role": "user", "content": "Hello!"}],
+    max_tokens=100,
+    temperature=0.7,
+    top_p=0.9
+)
+```
+
+#### `complete()`
+
+```python
+response = client.complete(
+    prompt="The future of AI is",
+    n_predict=50,
+    temperature=0.8
+)
+```
+
+#### `embeddings.create()`
+
+```python
+emb = client.embeddings.create(input=["Hello world", "Goodbye world"])
+```
+
+#### `tokenize()` / `detokenize()`
+
+```python
+tokens = client.tokenize("Hello, world!")
+text = client.detokenize(tokens.tokens)
 ```
 
 ## Examples
 
-See [API Examples](examples.md)
+See [API Examples](examples.md) and [InferenceEngine](inference-engine.md) for a simpler wrapper.

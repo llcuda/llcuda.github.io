@@ -4,20 +4,20 @@ Configure LLM on GPU 0 and Graphistry on GPU 1.
 
 ## Architecture
 
-```
-GPU 0: llama-server (15GB)
-  ↓ Extract knowledge graphs
-GPU 1: RAPIDS + Graphistry (15GB)
-  → Visualize millions of nodes/edges
+```mermaid
+flowchart TD
+  A[GPU 0: llama-server] --> B[Extract entities + relations]
+  B --> C[GPU 1: RAPIDS + Graphistry]
 ```
 
 ## Setup GPU 0 (LLM)
 
 ```python
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-
 from llcuda.server import ServerManager, ServerConfig
+from llcuda.graphistry import SplitGPUManager
+
+manager = SplitGPUManager()
+manager.assign_llm(0)
 
 config = ServerConfig(model_path="model.gguf", n_gpu_layers=99)
 server = ServerManager()
@@ -27,11 +27,10 @@ server.start_with_config(config)
 ## Setup GPU 1 (Graphistry)
 
 ```python
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+from llcuda.graphistry import GraphWorkload, register_graphistry
 
-import graphistry
-graphistry.register(api=3, protocol="https", server="hub.graphistry.com")
+workload = GraphWorkload(gpu_id=1)
+register_graphistry(api=3, protocol="https", server="hub.graphistry.com")
 ```
 
 ## Workflow

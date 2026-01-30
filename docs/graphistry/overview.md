@@ -12,41 +12,31 @@ PyGraphistry provides:
 
 ## Split-GPU Architecture
 
-```
-GPU 0: llcuda (LLM)  →  GPU 1: Graphistry (Viz)
+```mermaid
+flowchart LR
+  A[GPU 0: llcuda LLM] --> B[GPU 1: RAPIDS + Graphistry]
 ```
 
 ## Quick Start
 
 ```python
-import graphistry
-import cudf
+from llcuda.graphistry import GraphWorkload, register_graphistry
 
-# Configure for GPU 1
-import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+# Use GPU 1 for graph workloads
+workload = GraphWorkload(gpu_id=1)
 
-# Register Graphistry
-graphistry.register(
+# Register Graphistry (personal keys recommended)
+register_graphistry(
     api=3,
     protocol="https",
-    server="hub.graphistry.com",
-    personal_key_id="YOUR_KEY"
+    server="hub.graphistry.com"
 )
 
-# Create graph
-nodes = cudf.DataFrame({
-    'id': [1, 2, 3],
-    'label': ['A', 'B', 'C']
-})
-
-edges = cudf.DataFrame({
-    'src': [1, 2],
-    'dst': [2, 3]
-})
-
 # Visualize
-g = graphistry.edges(edges, 'src', 'dst').nodes(nodes, 'id')
+g = workload.create_knowledge_graph(
+    entities=[{"id": 1}, {"id": 2}, {"id": 3}],
+    relationships=[{"source": 1, "target": 2}, {"source": 2, "target": 3}]
+)
 g.plot()
 ```
 
