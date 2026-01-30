@@ -551,7 +551,7 @@ engine.load_model("model-Q4_K_M.gguf", silent=True)
 
 ## See Also
 
-- [GGUF Format](gguf-format.md) - Understanding GGUF
+- [GGUF Format](../gguf/overview.md) - Understanding GGUF
 - [Performance Benchmarks](../performance/benchmarks.md) - Speed comparisons
 - [Optimization Guide](../performance/optimization.md) - Tuning performance
 - [Quick Start](quickstart.md) - Getting started

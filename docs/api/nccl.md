@@ -45,4 +45,4 @@ dist.init_process_group(backend="nccl")
 
 ## Examples
 
-See [NCCL Tutorial](../tutorials/08-nccl-pytorch.md)
+See [Tensor Split vs NCCL](../architecture/tensor-split-vs-nccl.md)

@@ -300,6 +300,6 @@ engine.load_model("model.gguf", verbose=True, silent=False)
 ## Next Steps
 
 - [FAQ](faq.md) - Frequently asked questions
-- [Performance Optimization](../tutorials/performance.md) - Speed up inference
+- [Performance Optimization](../performance/optimization.md) - Speed up inference
 - [First Steps](first-steps.md) - Getting started guide
 - [GitHub Issues](https://github.com/llcuda/llcuda/issues) - Report bugs

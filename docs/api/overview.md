@@ -11,14 +11,15 @@ llcuda provides a simple, PyTorch-style API for GPU-accelerated LLM inference.
 | Class | Purpose | Documentation |
 |-------|---------|---------------|
 | `InferenceEngine` | Main interface for model loading and inference | [Details](inference-engine.md) |
-| `InferenceResult` | Container for inference results with metrics | [Details](inference-engine.md#inference-result) |
+| `InferResult` | Container for inference results with metrics | [Details](inference-engine.md#infer-result) |
 
 ### Utility Functions
 
 | Function | Purpose | Documentation |
 |----------|---------|---------------|
 | `check_gpu_compatibility()` | Verify GPU support | [Details](device.md#check-gpu-compatibility) |
-| `get_device_properties()` | Get GPU device information | [Details](device.md#device-properties) |
+| `core.get_device_properties()` | Get GPU device information | [Details](device.md#get-device-properties) |
+| `core.get_device_count()` | Get number of CUDA devices | [Details](device.md#get-device-count) |
 
 ## :rocket: Quick API Reference
 

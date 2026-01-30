@@ -219,6 +219,8 @@ nav:
           - guides/build-from-source.md
   - API Reference:
       - api/overview.md
+      - api/inference-engine.md
+      - api/device.md
       - api/client.md
       - api/server.md
       - api/multigpu.md

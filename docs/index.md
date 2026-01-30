@@ -372,16 +372,16 @@ Complete tutorial series for Kaggle dual T4 environment - **from beginner to adv
 
 | # | Notebook | Open in Kaggle | Description | Time |
 |---|----------|----------------|-------------|------|
-| 01 | [Quick Start](tutorials/01-quickstart.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/01-quickstart-llcuda-v2.2.0.ipynb) | 5-minute introduction | 5 min |
-| 02 | [Server Setup](tutorials/02-server-setup.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/02-llama-server-setup-llcuda-v2.2.0.ipynb) | Server configuration & lifecycle | 15 min |
-| 03 | [Multi-GPU](tutorials/03-multi-gpu.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/03-multi-gpu-inference-llcuda-v2.2.0.ipynb) | Dual T4 tensor-split | 20 min |
-| 04 | [GGUF Quantization](tutorials/04-gguf-quantization.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/04-gguf-quantization-llcuda-v2.2.0.ipynb) | K-quants, I-quants, parsing | 20 min |
-| 05 | [Unsloth Integration](tutorials/05-unsloth-integration.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/05-unsloth-integration-llcuda-v2.2.0.ipynb) | Fine-tune → GGUF → Deploy | 30 min |
-| 06 | [Split-GPU + Graphistry](tutorials/06-split-gpu-graphistry.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/06-split-gpu-graphistry-llcuda-v2.2.0.ipynb) | LLM + RAPIDS visualization | 30 min |
-| 07 | [OpenAI API](tutorials/07-openai-api.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/07-openai-api-client-llcuda-v2.2.0.ipynb) | Drop-in OpenAI SDK | 15 min |
-| 08 | [NCCL + PyTorch](tutorials/08-nccl-pytorch.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/08-nccl-pytorch-llcuda-v2.2.0.ipynb) | Distributed PyTorch | 25 min |
-| 09 | [Large Models (70B)](tutorials/09-large-models.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/09-large-models-kaggle-llcuda-v2.2.0.ipynb) | 70B on dual T4 with IQ3_XS | 30 min |
-| 10 | [Complete Workflow](tutorials/10-complete-workflow.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/10-complete-workflow-llcuda-v2.2.0.ipynb) | End-to-end production | 45 min |
+| 01 | [Quick Start](tutorials/01-quickstart.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/01-quickstart-llcuda-v2-2-0) | 5-minute introduction | 5 min |
+| 02 | [Server Setup](tutorials/02-server-setup.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/02-llama-server-setup-llcuda-v2-2-0) | Server configuration & lifecycle | 15 min |
+| 03 | [Multi-GPU](tutorials/03-multi-gpu.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/03-multi-gpu-inference-llcuda-v2-2-0) | Dual T4 tensor-split | 20 min |
+| 04 | [GGUF Quantization](tutorials/04-gguf-quantization.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/04-gguf-quantization-llcuda-v2-2-0) | K-quants, I-quants, parsing | 20 min |
+| 05 | [Unsloth Integration](tutorials/05-unsloth-integration.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/05-unsloth-integration-llcuda-v2-2-0) | Fine-tune → GGUF → Deploy | 30 min |
+| 06 | [Split-GPU + Graphistry](tutorials/06-split-gpu-graphistry.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/06-split-gpu-graphistry-llcuda-v2-2-0) | LLM + RAPIDS visualization | 30 min |
+| 07 | [Knowledge Graph Extraction](tutorials/07-openai-api.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/07-knowledge-graph-extraction-graphistry-v2-2-0) | LLM-driven entity & relation graphs | 30 min |
+| 08 | [Document Network Analysis](tutorials/08-nccl-pytorch.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/08-document-network-analysis-graphistry-llcuda-v2-2-0) | GPU graph analytics for documents | 35 min |
+| 09 | [Large Models (70B)](tutorials/09-large-models.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/09-large-models-kaggle-llcuda-v2-2-0) | 70B on dual T4 with IQ3_XS | 30 min |
+| 10 | [Complete Workflow](tutorials/10-complete-workflow.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/10-complete-workflow-llcuda-v2-2-0) | End-to-end production | 45 min |
 
 ### ⭐ Advanced Visualization (Tutorial 11) - MOST IMPORTANT
 
@@ -391,7 +391,7 @@ Complete tutorial series for Kaggle dual T4 environment - **from beginner to adv
 
 | # | Notebook | Open in Kaggle | Description | Time |
 |---|----------|----------------|-------------|------|
-| **11** | [**GGUF Neural Network Visualization**](tutorials/11-gguf-neural-network-visualization.md) ⭐ | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/llcuda/llcuda/blob/main/notebooks/11-gguf-neural-network-graphistry-visualization.ipynb) | **Complete architecture → interactive dashboards** | **60 min** |
+| **11** | [**GGUF Neural Network Visualization**](tutorials/11-gguf-neural-network-visualization.md) ⭐ | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/11-gguf-neural-network-graphistry-vis-executed-2) | **Complete architecture → interactive dashboards** | **60 min** |
 
 **What Makes Tutorial 11 Unique:**
 

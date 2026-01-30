@@ -137,7 +137,7 @@ model.save_pretrained_gguf(
 engine.load_model("my-model-Q4_K_M.gguf")
 ```
 
-See [Unsloth Integration](../tutorials/unsloth-integration.md) for details.
+See [Unsloth Integration](../tutorials/05-unsloth-integration.md) for details.
 
 ## Performance
 
@@ -176,7 +176,7 @@ engine.load_model(
 )
 ```
 
-See [Performance Tutorial](../tutorials/performance.md) for details.
+See [Performance Optimization](../performance/optimization.md) for details.
 
 ### Does llcuda support batching?
 
@@ -374,7 +374,7 @@ Yes! Contributions welcome:
 
 ### How do I build binaries?
 
-See [Build Binaries Tutorial](../tutorials/build-binaries.md)
+See [Build from Source](build-from-source.md)
 
 ### How do I report bugs?
 
@@ -392,8 +392,8 @@ Open a [GitHub Issue](https://github.com/llcuda/llcuda/issues/new) with:
 - [Quick Start](quickstart.md)
 - [First Steps](first-steps.md)
 - [Troubleshooting](troubleshooting.md)
-- [Performance Optimization](../tutorials/performance.md)
-- [API Reference](../api/inference-engine.md)
+- [Performance Optimization](../performance/optimization.md)
+- [API Reference](../api/overview.md)
 
 ## Still have questions?
 

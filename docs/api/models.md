@@ -205,4 +205,4 @@ REGISTRY = {
 
 - [InferenceEngine API](inference-engine.md)
 - [Model Selection Guide](../guides/model-selection.md)
-- [GGUF Format](../guides/gguf-format.md)
+- [GGUF Format](../gguf/overview.md)

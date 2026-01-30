@@ -12,8 +12,8 @@ Complete tutorial series for llcuda v2.2.0 on Kaggle dual T4 - **11 comprehensiv
 | 04 | [GGUF Quantization](04-gguf-quantization.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/04-gguf-quantization-llcuda-v2-2-0) | K-quants, I-quants | 20 min |
 | 05 | [Unsloth Integration](05-unsloth-integration.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/05-unsloth-integration-llcuda-v2-2-0) | Fine-tune → Deploy | 30 min |
 | 06 | [Split-GPU + Graphistry](06-split-gpu-graphistry.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/06-split-gpu-graphistry-llcuda-v2-2-0) | LLM + Visualization | 30 min |
-| 07 | [OpenAI API](07-openai-api.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/07-openai-api-client-llcuda-v2-2-0) | OpenAI SDK | 15 min |
-| 08 | [NCCL + PyTorch](08-nccl-pytorch.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/08-nccl-pytorch-llcuda-v2-2-0) | Distributed PyTorch | 25 min |
+| 07 | [Knowledge Graph Extraction](07-openai-api.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/07-knowledge-graph-extraction-graphistry-v2-2-0) | LLM-driven entity & relation graphs | 30 min |
+| 08 | [Document Network Analysis](08-nccl-pytorch.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/08-document-network-analysis-graphistry-llcuda-v2-2-0) | GPU graph analytics for documents | 35 min |
 | 09 | [Large Models (70B)](09-large-models.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/09-large-models-kaggle-llcuda-v2-2-0) | 70B on dual T4 | 30 min |
 | 10 | [Complete Workflow](10-complete-workflow.md) | [![Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/waqasm86/10-complete-workflow-llcuda-v2-2-0) | End-to-end | 45 min |
 
@@ -58,7 +58,7 @@ All basics through complete workflow
 **Multi-GPU focus** for large models:
 ```
 01 → 03 → 08 → 09
-Quick Start → Multi-GPU → NCCL → 70B Models
+Quick Start → Multi-GPU → Document Network Analysis → 70B Models
 ```
 
 ### Visualization & Research (2.5 hours) ⭐ **RECOMMENDED**

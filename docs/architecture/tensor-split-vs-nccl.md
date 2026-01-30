@@ -42,4 +42,4 @@ dist.init_process_group(backend="nccl")
 - **Tensor Split**: Run 70B model on dual T4
 - **NCCL**: Train model with DDP
 
-See: [Tutorial 08 - NCCL](../tutorials/08-nccl-pytorch.md)
+See: [Tensor-Split Guide](../kaggle/tensor-split.md) and [NCCL Integration API](../api/nccl.md)
