@@ -1,6 +1,7 @@
 # robots.txt for llcuda v2.2.0
 User-agent: *
 Allow: /
+Sitemap: /sitemap.xml
 
 # Sitemaps
 Sitemap: https://llcuda.github.io/sitemap.xml

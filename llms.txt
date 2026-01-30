@@ -13,7 +13,7 @@ Key Features:
 - 🎯 **961MB Binary Package**: llama.cpp build 7760 with FlashAttention
 - 🔧 **70B Model Support**: Run Llama-70B IQ3_XS on dual T4
 - 📦 **29 GGUF Quantization Formats**: K-quants and I-quants
-- 🚀 **Kaggle Optimized**: 10 tutorial notebooks for dual T4
+- 🚀 **Kaggle Optimized**: 11 tutorial notebooks for dual T4
 - 🔄 **Unsloth Integration**: Fine-tune → GGUF export → llcuda deployment
 
 ## Getting Started
@@ -31,16 +31,17 @@ Key Features:
 - [04 - GGUF Quantization](https://llcuda.github.io/tutorials/04-gguf-quantization/): K-quants and I-quants explained
 - [05 - Unsloth Integration](https://llcuda.github.io/tutorials/05-unsloth-integration/): Fine-tune to deployment workflow
 - [06 - Split-GPU Graphistry](https://llcuda.github.io/tutorials/06-split-gpu-graphistry/): LLM + Graphistry on separate GPUs
-- [07 - OpenAI API](https://llcuda.github.io/tutorials/07-openai-api/): OpenAI SDK compatibility
-- [08 - NCCL PyTorch](https://llcuda.github.io/tutorials/08-nccl-pytorch/): NCCL vs tensor-split explained
+- [07 - Knowledge Graph Extraction](https://llcuda.github.io/tutorials/07-openai-api/): LLM-driven entity & relation graphs
+- [08 - Document Network Analysis](https://llcuda.github.io/tutorials/08-nccl-pytorch/): GPU graph analytics for documents
 - [09 - Large Models](https://llcuda.github.io/tutorials/09-large-models/): Run 70B models on dual T4
 - [10 - Complete Workflow](https://llcuda.github.io/tutorials/10-complete-workflow/): End-to-end production workflow
+- [11 - GGUF Neural Network Visualization](https://llcuda.github.io/tutorials/11-gguf-neural-network-visualization/): Full architecture dashboards
 
 ## Main Repository
 
 - [llcuda GitHub Repository](https://github.com/llcuda/llcuda): Main llcuda v2.2.0 source code
 - [Binary Releases](https://github.com/llcuda/llcuda/releases/tag/v2.2.0): 961MB CUDA 12 binaries
-- [Kaggle Notebooks](https://github.com/llcuda/llcuda/tree/main/notebooks): 10 tutorial notebooks
+- [Kaggle Notebooks](https://github.com/llcuda/llcuda/tree/main/notebooks): 11 tutorial notebooks
 
 ## Complete Documentation
 
@@ -95,7 +96,7 @@ Binary auto-download: 961 MB CUDA binaries download automatically on first use.
 - **70B Model Support**: Run Llama-70B IQ3_XS on 30GB VRAM
 - **29 GGUF Quantization Formats**: K-quants and I-quants
 - **FlashAttention**: 2-3x speedup for all quantization types
-- **Kaggle Optimized**: 10 comprehensive tutorial notebooks
+- **Kaggle Optimized**: 11 comprehensive tutorial notebooks
 
 ## Performance Data
 
@@ -123,7 +124,7 @@ GPU 1: RAPIDS cuDF/cuGraph + Graphistry
 - [Home](https://llcuda.github.io/): Main homepage
 - [Quick Start](https://llcuda.github.io/guides/quickstart/): 5-minute setup
 - [Installation](https://llcuda.github.io/guides/installation/): Kaggle installation
-- [Tutorial Index](https://llcuda.github.io/tutorials/index/): 10 Kaggle notebooks
+- [Tutorial Index](https://llcuda.github.io/tutorials/index/): 11 Kaggle notebooks
 - [API Reference](https://llcuda.github.io/api/overview/): Complete API docs
 
 ## Key Information
@@ -144,11 +145,11 @@ Remember:
 - Binaries auto-download on first use (961 MB)
 - Split-GPU: LLM on GPU 0, Graphistry on GPU 1
 - 70B models supported with IQ3_XS quantization
-- 10 comprehensive Kaggle tutorial notebooks
+- 11 comprehensive Kaggle tutorial notebooks
 
 ## Kaggle Notebooks
 
-llcuda includes 10 comprehensive tutorial notebooks for Kaggle dual T4:
+llcuda includes 11 comprehensive tutorial notebooks for Kaggle dual T4:
 
 ### Beginner (01-03)
 - [01 - Quick Start](https://www.kaggle.com/code/waqasm86/01-quickstart-llcuda-v2-2-0): 5-minute introduction
@@ -160,11 +161,12 @@ llcuda includes 10 comprehensive tutorial notebooks for Kaggle dual T4:
 - [05 - Unsloth Integration](https://www.kaggle.com/code/waqasm86/05-unsloth-integration-llcuda-v2-2-0): Fine-tune workflow
 - [06 - Split-GPU Graphistry](https://www.kaggle.com/code/waqasm86/06-split-gpu-graphistry-llcuda-v2-2-0): Dual GPU architecture
 
-### Advanced (07-10)
-- [07 - OpenAI API](https://www.kaggle.com/code/waqasm86/07-openai-api-client-llcuda-v2-2-0): SDK compatibility
-- [08 - NCCL PyTorch](https://www.kaggle.com/code/waqasm86/08-nccl-pytorch-llcuda-v2-2-0): Distributed training
+### Advanced (07-11)
+- [07 - Knowledge Graph Extraction](https://www.kaggle.com/code/waqasm86/07-knowledge-graph-extraction-graphistry-v2-2-0): LLM-driven entity & relation graphs
+- [08 - Document Network Analysis](https://www.kaggle.com/code/waqasm86/08-document-network-analysis-graphistry-llcuda-v2-2-0): GPU graph analytics for documents
 - [09 - Large Models](https://www.kaggle.com/code/waqasm86/09-large-models-kaggle-llcuda-v2-2-0): 70B on dual T4
 - [10 - Complete Workflow](https://www.kaggle.com/code/waqasm86/10-complete-workflow-llcuda-v2-2-0): End-to-end guide
+- [11 - GGUF Neural Network Visualization](https://www.kaggle.com/code/waqasm86/11-gguf-neural-network-graphistry-vis-executed-2): Full architecture dashboards
 
 ## GGUF Quantization Support
 
